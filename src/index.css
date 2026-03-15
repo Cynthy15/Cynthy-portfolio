@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mint: #3ECFA0;
+  --sky: #4AAFEB;
+  --lemon: #F5E642;
+  --rose: #FF7EB3;
+  --navy-950: #04080F;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--navy-950);
+  color: #c2d8f0;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Custom cursor */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--mint);
+  transition-duration: 0.05s;
+  box-shadow: 0 0 8px var(--mint);
+}
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(62,207,160,0.5);
+  transition-duration: 0.15s;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #070D18; }
+::-webkit-scrollbar-thumb { background: #1E304F; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(62,207,160,0.4); }
+
+/* Scanline overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Noise grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9997;
+  opacity: 0.5;
+}
+
+/* Selection */
+::selection { background: rgba(62,207,160,0.25); color: #fff; }
+
+/* Typewriter text */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--mint);
+  animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
+  width: 0;
+}
+@keyframes typing { to { width: 100%; } }
+@keyframes blink-caret { 0%, 100% { border-color: var(--mint); } 50% { border-color: transparent; } }
+
+/* Glow text */
+.text-glow-mint { text-shadow: 0 0 10px rgba(62,207,160,0.6), 0 0 30px rgba(62,207,160,0.2); }
+.text-glow-sky  { text-shadow: 0 0 10px rgba(74,175,235,0.6), 0 0 30px rgba(74,175,235,0.2); }
+
+/* Section fade-in */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.section-reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Terminal card */
+.term-card {
+  background: #0C1525;
+  border: 1px solid #172540;
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset;
+}
+.term-card:hover {
+  border-color: rgba(62,207,160,0.35);
+  box-shadow: 0 0 0 1px rgba(62,207,160,0.1), 0 4px 24px rgba(62,207,160,0.07);
+  transform: translateY(-2px);
+}
+
+/* Input */
+.term-input {
+  background: #0C1525;
+  border: 1px solid #172540;
+  border-radius: 8px;
+  color: #c2d8f0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  padding: 11px 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.term-input:focus {
+  border-color: rgba(62,207,160,0.5);
+  box-shadow: 0 0 0 3px rgba(62,207,160,0.08);
+}
+.term-input::placeholder { color: #2d4a6a; }
+
+/* Skill bar */
+.skill-bar-fill {
+  height: 3px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.skill-bar-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+
+/* Nav link active */
+a.nav-active { color: var(--mint) !important; }
