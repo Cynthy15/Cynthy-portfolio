@@ -1,6 +1,6 @@
 const MARQUEE_ITEMS = [
   "React", "Figma", "JavaScript", "Python", "Flutter", "Tailwind CSS",
-  "Adobe Photoshop", "Canva", "UI/UX", "Front-End", "Data Analysis", "IT Support",
+  "Adobe Photoshop", "Canva", "UI/UX", "Front-End", "Data Analysis", "IT Support","System Analysis",
   "HTML5", "CSS3", "Node.js", "Git", "Firebase", "SQL",
 ];
 
@@ -28,11 +28,11 @@ export default function Footer() {
           <div>
             <div className="font-display text-xl font-extrabold text-white mb-2 flex items-center gap-2">
               <span className="text-mint text-glow-mint">▸</span>
-              cynthia.sh
+              cynthy.
             </div>
             <p className="font-mono text-xs text-sky/40 leading-relaxed">
               Front-End Developer · UI/UX Designer<br />
-              Data Analyst · IT Specialist<br />
+              Data Analyst · IT & System Specialist<br />
               <span className="text-mint">// Based in Kigali, Rwanda 🇷🇼</span>
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
           <div>
             <div className="font-mono text-[10px] text-sky/30 uppercase tracking-widest mb-3">connect</div>
             <div className="space-y-2">
-              <div className="font-mono text-xs text-[#FF7EB3]">cynthydigalra@gmail.com</div>
+              <div className="font-mono text-xs text-[#FF7EB3]">cynthynigaira@gmail.com</div>
               <div className="font-mono text-xs text-lemon">+250 791 222 275</div>
               <div className="flex gap-3 mt-3">
                 {["IG","LI","GH"].map(s => (
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-navy-700 pt-5 flex flex-col md:flex-row items-center justify-between gap-2">
           <span className="font-mono text-[10px] text-sky/25">
-            // designed & built by Cynthia Niganze — 2025
+            // designed & built by Cynthy — 2026
           </span>
           <span className="font-mono text-[10px] text-sky/25">
             exit code: 0 &nbsp;·&nbsp; <span className="text-mint/50">status: online</span>

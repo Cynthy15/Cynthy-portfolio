@@ -5,6 +5,7 @@ const ROLES = [
   "UI/UX Designer_",
   "Data Analyst_",
   "IT Specialist_",
+  "System Analyst_",
 ];
 
 const TAGS = [
@@ -37,7 +38,7 @@ function TypewriterRole() {
     if (!deleting && displayed.length < target.length) {
       timeout = setTimeout(() => setDisplayed(target.slice(0, displayed.length + 1)), 70);
     } else if (!deleting && displayed.length === target.length) {
-      timeout = setTimeout(() => setDeleting(true), 1800);
+      timeout = setTimeout(() => setDeleting(true), 2000);
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35);
     } else if (deleting && displayed.length === 0) {
@@ -57,33 +58,31 @@ function TypewriterRole() {
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center pt-14 overflow-hidden"
-    >
+    <section id="home" className="relative min-h-screen flex items-center pt-14 overflow-hidden">
+
       {/* Grid background */}
-      <div
-        className="absolute inset-0 bg-grid-pattern bg-grid opacity-100"
+      <div className="absolute inset-0 bg-grid-pattern bg-grid opacity-100"
         style={{ backgroundSize: "40px 40px" }}
       />
+      
       {/* Radial glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-mint/5 blur-[120px] pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full bg-sky/5 blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6 py-20 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left: content */}
+
         <div>
           {/* Terminal path */}
           <div className="font-mono text-xs text-sky/60 mb-6 flex items-center gap-2">
             <span className="text-mint">▸</span>
             <span>~/cynthia-niganze</span>
             <span className="text-navy-600">$</span>
-            <span className="text-white/60">whoami</span>
+            <span className="text-white/60">who am i?</span>
           </div>
 
           {/* Name */}
-          <h1
-            className="font-display text-5xl md:text-6xl font-extrabold text-white leading-[1.05] mb-3 animate-fadeUp"
+          <h1 className="font-display text-5xl md:text-6xl font-extrabold text-white leading-[1.05] mb-3 animate-fadeUp"
             style={{ animationDelay: "0.1s" }}
           >
             Cynthia<br />
@@ -91,8 +90,7 @@ export default function Hero() {
           </h1>
 
           {/* Role typewriter */}
-          <div
-            className="font-mono text-lg md:text-xl mb-6 min-h-[2rem] animate-fadeUp"
+          <div className="font-mono text-lg md:text-xl mb-6 min-h-[2rem] animate-fadeUp"
             style={{ animationDelay: "0.2s" }}
           >
             <TypewriterRole />
@@ -127,24 +125,21 @@ export default function Hero() {
           </div>
 
           {/* CTAs */}
-          <div
-            className="flex flex-wrap gap-3 animate-fadeUp"
+          <div className="flex flex-wrap gap-3 animate-fadeUp"
             style={{ animationDelay: "0.5s" }}
           >
-            <a
-              href="#contact"
+            <a href="#contact"
               className="font-mono text-sm bg-mint text-navy-950 font-bold px-6 py-3 rounded hover:bg-mint-bright transition-colors duration-200 shadow-mint"
             >
               $ ./contact.sh
             </a>
-            <a
-              href="#projects"
+            <a href="#projects"
               className="font-mono text-sm border border-sky/30 text-sky px-6 py-3 rounded hover:border-sky/60 hover:bg-sky/5 transition-all duration-200"
             >
               $ ls ./projects
             </a>
-            <a
-              href="#"
+
+            <a href="#"
               className="font-mono text-sm border border-navy-600 text-sky-300/60 px-6 py-3 rounded hover:border-navy-500 hover:text-sky-300 transition-all duration-200"
             >
               $ cat cv.pdf
@@ -186,15 +181,15 @@ export default function Hero() {
             <div className="p-5 font-mono text-xs leading-relaxed space-y-1">
               <div><span className="text-mint">cynthia@portfolio</span><span className="text-sky/50">:</span><span className="text-sky">~</span><span className="text-white/40">$</span> <span className="text-white/80">cat profile.json</span></div>
               <div className="text-sky/40">{`{`}</div>
-              <div className="ml-4 text-sky/60">"name": <span className="text-lemon">"Cynthia Iraduikunda Niganze"</span>,</div>
+              <div className="ml-4 text-sky/60">"name": <span className="text-lemon">"Cynthia Niganze Iradukunda"</span>,</div>
               <div className="ml-4 text-sky/60">"location": <span className="text-lemon">"Kigali, Rwanda 🇷🇼"</span>,</div>
               <div className="ml-4 text-sky/60">"role": <span className="text-lemon">"Information Systems Student"</span>,</div>
               <div className="ml-4 text-sky/60">"university": <span className="text-lemon">"University of Rwanda"</span>,</div>
               <div className="ml-4 text-sky/60">"skills": [</div>
-              <div className="ml-8 text-mint">"UI/UX", "Front-End", "Data", "IT"</div>
+              <div className="ml-8 text-mint">"UI/UX", "Front-End", "Data", "IT", "System"</div>
               <div className="ml-4 text-sky/60">],</div>
               <div className="ml-4 text-sky/60">"available": <span className="text-mint">true</span>,</div>
-              <div className="ml-4 text-sky/60">"email": <span className="text-[#FF7EB3]">"cynthydigalra@gmail.com"</span></div>
+              <div className="ml-4 text-sky/60">"email": <span className="text-[#FF7EB3]">"cynthynigaira@gmail.com"</span></div>
               <div className="text-sky/40">{`}`}</div>
               <div className="mt-3"><span className="text-mint">cynthia@portfolio</span><span className="text-sky/50">:</span><span className="text-sky">~</span><span className="text-white/40">$</span> <span className="animate-blink text-white">█</span></div>
             </div>
@@ -207,26 +202,9 @@ export default function Hero() {
             <span className="font-mono text-xs text-mint">Open to opportunities & collaborations</span>
           </div>
 
-          {/* Social row */}
-          <div className="mt-3 flex gap-2">
-            {[
-              { name: "Instagram", icon: "IG", href: "#" },
-              { name: "LinkedIn",  icon: "LI", href: "#" },
-              { name: "GitHub",    icon: "GH", href: "#" },
-            ].map(s => (
-              <a
-                key={s.name}
-                href={s.href}
-                className="flex-1 term-card p-3 text-center font-mono text-[11px] text-sky/50 hover:text-mint hover:border-mint/30 rounded-xl transition-colors"
-              >
-                {s.icon}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
 
-      {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 font-mono text-[10px] text-sky/30 flex flex-col items-center gap-2">
         <span>scroll down</span>
         <div className="w-px h-8 bg-gradient-to-b from-sky/30 to-transparent" />
