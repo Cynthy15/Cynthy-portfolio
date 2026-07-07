@@ -1,7 +1,7 @@
 const MARQUEE_ITEMS = [
-  "React", "Figma", "JavaScript", "Python", "Flutter", "Tailwind CSS",
-  "Adobe Photoshop", "Canva", "UI/UX", "Front-End", "Data Analysis", "IT Support","System Analysis",
-  "HTML5", "CSS3", "Node.js", "Git", "Firebase", "SQL",
+  "React", "Next.js", "Figma", "JavaScript", "Python", "Flutter", "Tailwind CSS",
+  "Adobe Photoshop", "Canva", "UI/UX", "Front-End", "Data Analysis", "IT Support", "System Analysis",
+  "HTML5", "CSS3", "Node.js", "Git", "Firebase", "SQL", "PostgreSQL", "REST APIs",
 ];
 
 export default function Footer() {

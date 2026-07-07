@@ -60,7 +60,7 @@ export default function Contact() {
                 <span className="text-mint">▸</span> contact.json
               </div>
               {[
-                { label: "email",    val: "cynthydigalra@gmail.com", color: "text-[#FF7EB3]" },
+                { label: "email",    val: "cynthynigaira@gmail.com", color: "text-[#FF7EB3]" },
                 { label: "phone",    val: "+250 791 222 275",        color: "text-lemon" },
                 { label: "location", val: "Kigali, Rwanda",          color: "text-mint" },
               ].map(c => (
