@@ -1,13 +1,18 @@
 import { useReveal } from "../hooks/useReveal";
 
 const SKILLS = [
-  { label: "Figma",            pct: 100, color: "#3ECFA0" },
-  { label: "JavaScript",       pct: 100, color: "#4AAFEB" },
-  { label: "React",            pct: 90,  color: "#3ECFA0" },
-  { label: "Adobe Photoshop",  pct: 85,  color: "#F5E642" },
-  { label: "Flutter",          pct: 70,  color: "#FF7EB3" },
-  { label: "Canva",            pct: 60,  color: "#4AAFEB" },
-  { label: "Python",           pct: 75,  color: "#F5E642" },
+  { label: "Figma",                    pct: 100, color: "#3ECFA0" },
+  { label: "HTML & CSS",               pct: 100, color: "#4AAFEB" },
+  { label: "JavaScript",               pct: 95,  color: "#F5E642" },
+  { label: "React / Next.js",          pct: 90,  color: "#3ECFA0" },
+  { label: "Node.js",                  pct: 75,  color: "#4AAFEB" },
+  { label: "SQL & NoSQL Databases",    pct: 80,  color: "#F5E642" },
+  { label: "Git & GitHub",             pct: 90,  color: "#3ECFA0" },
+  { label: "CI/CD & Testing",          pct: 65,  color: "#FF7EB3" },
+  { label: "Team Collaboration",       pct: 95,  color: "#4AAFEB" },
+  { label: "Communication Skills",     pct: 95,  color: "#F5E642" },
+  { label: "Flutter",                  pct: 70,  color: "#FF7EB3" },
+  { label: "Python",                   pct: 75,  color: "#3ECFA0" },
 ];
 
 const TIMELINE = [
