@@ -1,0 +1,737 @@
+[
+  {
+    "slug": "boards-cafe",
+    "title": "Boards Café",
+    "subtitle": "Café operations backend",
+    "category": [
+      "Backend engineering",
+      "Databases"
+    ],
+    "status": "Source reviewed",
+    "kind": "Backend project",
+    "role": "Backend development (provided in my project brief); individual module authorship is not established by source review.",
+    "tech": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "OpenAPI"
+    ],
+    "desc": "A structured café operations API connecting menu categories, product variants, pricing, and sales orders.",
+    "problem": "Café teams need consistent menu information and reliable order totals without scattering business rules across interfaces.",
+    "users": "Café staff, administrators, and frontend developers integrating the operations API.",
+    "solution": "A modular Django backend with model constraints, serializer validation, authenticated order operations, and generated API documentation.",
+    "architecture": "Django apps separate menu, sales, users, roles, and inventory. Categories contain products; products have variants. Orders contain line items that retain a snapshot of product names and prices.",
+    "features": [
+      "Category, product, and variant models with uniqueness constraints.",
+      "Validation prevents negative effective variant prices and invalid product/variant combinations.",
+      "Order serializers calculate line totals, subtotals, and fixed or percentage discounts using Decimal arithmetic.",
+      "Order queries are scoped to their creator unless the requester is staff. Updates and deletion are limited to draft orders.",
+      "Routes include /api/menu/categories/, /api/menu/products/, /api/menu/variants/, /api/v1/sales/orders/, and /api/v1/docs/."
+    ],
+    "planned": [
+      "Runtime verification of menu and sales flows against the deployed environment.",
+      "Independent test execution and deployment validation."
+    ],
+    "decision": "Snapshotting product and variant names with unit prices preserves the meaning of historical order lines when menu information changes. Atomic writes keep order creation and its items in one transaction.",
+    "outcome": "The inspected source contains menu and sales models, validation, and API routes. Authentication test files exist, but were not executed during this portfolio review. Payment processing is outside the scope of this case study.",
+    "reflection": "Engineering takeaway: preserve historical business records and enforce pricing rules on the server. A personal retrospective is still to be added.",
+    "missing": [
+      "Module-level contribution and team ownership details.",
+      "Passing test reports and production readiness evidence.",
+      "Deployment health could not be confirmed during review."
+    ],
+    "flow": [
+      "Menu & variants",
+      "Validated order",
+      "Price snapshots",
+      "Sales totals"
+    ],
+    "flowLabel": "Source-derived menu and sales flow",
+    "sources": [
+      {
+        "label": "Menu data model",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/menu/models.py"
+      },
+      {
+        "label": "Price validation",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/menu/serializers.py"
+      },
+      {
+        "label": "Order calculations",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/sales/serializers.py"
+      },
+      {
+        "label": "Order permissions & actions",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/sales/views.py"
+      },
+      {
+        "label": "API documentation routes",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/urls.py"
+      },
+      {
+        "label": "Authentication test source",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/users/tests/test_authentication.py"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/BaordsCafe-Backend",
+    "links": [
+      {
+        "label": "Backend · availability unconfirmed",
+        "url": "https://boards-cafe-api.onrender.com/"
+      },
+      {
+        "label": "Associated frontend · availability unconfirmed",
+        "url": "https://boards-cafe-fe.vercel.app/"
+      }
+    ]
+  },
+  {
+    "slug": "reach",
+    "title": "REACH",
+    "subtitle": "Digital lending & business assessment",
+    "category": [
+      "Frontend development",
+      "Information systems",
+      "Innovation"
+    ],
+    "status": "Prototype",
+    "kind": "Product prototype",
+    "role": "Project development and systems exploration, as described in my brief. Specific file ownership remains to be documented.",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Mock datasets"
+    ],
+    "desc": "A lending prototype exploring how business information can support financing assessment for businesses with limited traditional collateral.",
+    "problem": "Businesses may struggle to demonstrate creditworthiness when financing depends heavily on traditional collateral.",
+    "users": "Business applicants and lending reviewers.",
+    "solution": "Explore a structured application journey that combines business identification, tax information, loan purpose, and an explainable assessment.",
+    "architecture": "The repository contains applicant, approver, and admin views. A TypeScript eligibility module looks up mock RDB, RRA, and credit-reference records; these are simulated datasets, not live institutional integrations.",
+    "features": [
+      "Applicant application, eligibility, loan-purpose, identity, and tracking pages are present.",
+      "A TypeScript function calculates illustrative eligibility, reasons, conditions, and repayment estimates from mock records.",
+      "The inspected auth context uses a default demo profile; it does not establish production authentication."
+    ],
+    "planned": [
+      "Authorized RRA and RDB integrations and an appropriate credit-reference data connection.",
+      "Server-side validation, persistent applications, and a verified authentication backend.",
+      "Review of assessment rules before any use in real lending."
+    ],
+    "decision": "Keeping lookup and eligibility calculations in a separate module makes the prototype logic easier to inspect. The demo must keep simulated assessment distinct from actual lending decisions.",
+    "outcome": "Source confirms a frontend prototype and mock-data assessment logic. No live institutional connection or real financing outcome has been verified.",
+    "reflection": "Engineering takeaway: explain the data behind a decision and keep prototype assumptions visible. Personal lessons and user feedback are still to be documented.",
+    "missing": [
+      "My exact module contributions.",
+      "Backend integration evidence, deployment validation, and user-study results."
+    ],
+    "flow": [
+      "Business identity",
+      "Mock data lookup",
+      "Eligibility rules",
+      "Reviewer journey"
+    ],
+    "flowLabel": "Source-derived prototype flow",
+    "sources": [
+      {
+        "label": "Eligibility implementation",
+        "url": "https://github.com/Cynthy15/REACH/blob/aecec64797d40bd130f0a832431de62b359ee2dd/src/lib/loanEligibility.ts"
+      },
+      {
+        "label": "Demo auth context",
+        "url": "https://github.com/Cynthy15/REACH/blob/aecec64797d40bd130f0a832431de62b359ee2dd/src/context/AuthContext.tsx"
+      },
+      {
+        "label": "Mock institutional data",
+        "url": "https://github.com/Cynthy15/REACH/blob/aecec64797d40bd130f0a832431de62b359ee2dd/src/lib/mockData.ts"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/REACH"
+  },
+  {
+    "slug": "meddelivery",
+    "title": "MedDelivery",
+    "subtitle": "Medicine delivery platform",
+    "category": [
+      "Frontend development"
+    ],
+    "status": "Source reviewed",
+    "kind": "Team frontend project",
+    "role": "Frontend development, as stated in my brief. Specific page ownership and team leadership need supporting contribution records.",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "REST APIs"
+    ],
+    "desc": "A medicine-delivery frontend with patient ordering, prescription upload, and interfaces for pharmacy operations.",
+    "problem": "Patients and pharmacy teams need a clear digital process for medicine requests, prescriptions, and fulfillment.",
+    "users": "Patients, pharmacists, pharmacy administrators, and platform administrators.",
+    "solution": "Role-oriented interfaces with a reusable patient shell and typed API services for orders, prescriptions, profiles, and locations.",
+    "architecture": "Next.js route groups separate public and patient experiences, with distinct pharmacy and administration sections. Typed service modules isolate HTTP requests from UI components.",
+    "features": [
+      "The inspected patient order page supports medicine items, prescription selection, delivery or pickup, saved locations, and insurance selection.",
+      "Submission uploads a prescription when supplied, then calls createOrder; validation and error states are implemented in the frontend.",
+      "Typed patient service functions cover orders, prescriptions, profiles, locations, and medicine requests.",
+      "Pharmacy and administration routes are present in the source tree; they were not all audited or run."
+    ],
+    "planned": [
+      "End-to-end verification with the actual backend and representative test accounts.",
+      "Documentation of individual frontend contributions and team coordination."
+    ],
+    "decision": "Separating typed API services from screen components helps keep request details consistent across role-specific interfaces. Prescription upload and order creation are sequenced explicitly.",
+    "outcome": "Source confirms frontend ordering logic and API request functions. Successful backend fulfillment, delivery operations, and team-leadership claims are not independently verified.",
+    "reflection": "Engineering takeaway: make multi-step submissions clear and handle partial failures explicitly. My personal retrospective is still to be added.",
+    "missing": [
+      "Verified individual commit or PR attribution.",
+      "Runtime and accessibility results for the original product.",
+      "Leadership evidence and measured outcomes."
+    ],
+    "flow": [
+      "Patient interface",
+      "Typed API service",
+      "Prescription upload",
+      "Order request"
+    ],
+    "flowLabel": "Source-derived frontend request flow",
+    "sources": [
+      {
+        "label": "Project dependencies",
+        "url": "https://github.com/Cynthy15/MedDelivery/blob/4e98c86bed33718a34c76219b4236f587584a883/package.json"
+      },
+      {
+        "label": "Patient order implementation",
+        "url": "https://github.com/Cynthy15/MedDelivery/blob/4e98c86bed33718a34c76219b4236f587584a883/src/app/(public)/(patient)/order/page.tsx"
+      },
+      {
+        "label": "Patient API service",
+        "url": "https://github.com/Cynthy15/MedDelivery/blob/4e98c86bed33718a34c76219b4236f587584a883/src/services/patientApi.ts"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/MedDelivery"
+  },
+  {
+    "slug": "blood-supply",
+    "title": "Blood Supply Flow Monitoring",
+    "subtitle": "Hospital–RBC information system",
+    "fullTitle": "Design and Implementation of a Real-Time Blood Supply Flow Monitoring Information System Between Hospitals and RBC.",
+    "category": [
+      "Information systems",
+      "Databases",
+      "Backend engineering"
+    ],
+    "status": "Academic prototype",
+    "kind": "Academic information system",
+    "role": "Information systems project work, as described in my brief. Detailed authorship and implementation responsibilities remain to be recorded.",
+    "tech": [
+      "React",
+      "Vite",
+      "FastAPI",
+      "SQLAlchemy",
+      "Python"
+    ],
+    "desc": "An academic system exploring blood-stock visibility, hospital requests, transfers, expiration, and coordination with the Rwanda Biomedical Centre.",
+    "problem": "Hospitals and RBC need better visibility into supply, demand, expiry, and transfers to coordinate blood availability.",
+    "users": "Hospital stock managers, RBC coordinators, and system administrators.",
+    "solution": "Model supply and demand as traceable records and expose inventory calculations and request workflows through an API prototype.",
+    "architecture": "The inspected repository contains a React frontend and a FastAPI backend. SQLAlchemy models describe BloodUnit, TransfusionRequest, and Transfer. Next.js and PostgreSQL remain the intended direction from my brief, rather than a verified completed migration.",
+    "features": [
+      "Backend source exposes blood-unit registration and listing, request creation and listing, and transfer creation routes.",
+      "Inventory logic implements stock balance, expiry calculation, and simple forecasting helpers.",
+      "Models capture blood type, quantity, dates, request urgency, and transfer participants."
+    ],
+    "planned": [
+      "Validate hospital requests → allocation → transfer → stock update as a complete workflow.",
+      "Extend traceability for expiration, disposal, and accountable stock movements.",
+      "Evaluate the planned Next.js and PostgreSQL architecture and verify authorization."
+    ],
+    "decision": "Separating inventory balance calculations from API handlers makes the arithmetic inspectable. Stock balance alone does not establish complete clinical traceability or safe deployment.",
+    "outcome": "Source confirms a prototype API and inventory model, not an operational hospital or RBC production deployment.",
+    "reflection": "Engineering takeaway: connect each inventory change to a documented event. Personal research findings and stakeholder feedback still need to be added.",
+    "missing": [
+      "Full workflow tests and stakeholder validation.",
+      "Exact contribution scope, deployment evidence, and measured outcomes."
+    ],
+    "flow": [
+      "Supply registration",
+      "Hospital request",
+      "Transfer record",
+      "Inventory balance"
+    ],
+    "flowLabel": "Source-derived prototype workflow",
+    "equation": "B(t+1) = B(t) + S − D − E",
+    "sources": [
+      {
+        "label": "API handlers",
+        "url": "https://github.com/Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM/blob/d7bb620975a2cc7a6f11609c47580f9034afbce2/backend/main.py"
+      },
+      {
+        "label": "Relational models",
+        "url": "https://github.com/Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM/blob/d7bb620975a2cc7a6f11609c47580f9034afbce2/backend/models.py"
+      },
+      {
+        "label": "Stock balance & expiry",
+        "url": "https://github.com/Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM/blob/d7bb620975a2cc7a6f11609c47580f9034afbce2/backend/inventory_model.py"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM"
+  },
+  {
+    "slug": "omnireach",
+    "title": "OmniReach",
+    "subtitle": "Remote computer access application",
+    "category": [
+      "Mobile development"
+    ],
+    "status": "Details pending",
+    "kind": "Mobile application project",
+    "role": "Mobile application work described in my brief; the project repository and specific contributions have not yet been matched.",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Android Studio",
+      "PostgreSQL · planned"
+    ],
+    "desc": "A mobile application project exploring remote computer access, account management, device identification, and login verification.",
+    "problem": "People need a practical way to access their computer when working from a mobile device.",
+    "users": "People who need remote access to their own computers.",
+    "solution": "The proposed journey connects mobile sign-in, device identification, verification, and an authorized remote session.",
+    "architecture": "The known development context is Flutter and Dart. PostgreSQL-related backend concepts and verification workflows are part of the planning context; the actual remote-session architecture needs source confirmation.",
+    "features": [],
+    "planned": [
+      "Account and device management.",
+      "Login verification and authorized session establishment.",
+      "Remote desktop transport and backend persistence validation."
+    ],
+    "decision": "The design needs to separate account verification from permission to control a particular device. The transport and authorization decisions are not documented in the available evidence.",
+    "outcome": "Project retained from my brief. No completed remote-access functionality is claimed without source evidence.",
+    "reflection": "Personal lessons learned and technical challenges are pending documentation.",
+    "missing": [
+      "Repository, screenshots, implemented feature list, exact role, and current milestone."
+    ],
+    "flow": [
+      "Account sign-in",
+      "Device selection",
+      "Verification",
+      "Remote session"
+    ],
+    "flowLabel": "Proposed workflow · not verified implementation",
+    "sources": []
+  },
+  {
+    "slug": "rescue-pulse",
+    "title": "Rescue Pulse",
+    "subtitle": "Road-accident emergency response concept",
+    "category": [
+      "Innovation",
+      "Mobile development",
+      "Information systems"
+    ],
+    "status": "Concept",
+    "kind": "Innovation concept",
+    "role": "Concept and systems exploration described in my brief; implementation and team responsibilities remain undocumented.",
+    "tech": [
+      "GPS · proposed",
+      "Mobile technology · proposed",
+      "System design"
+    ],
+    "desc": "An emergency-response concept combining mobile location, potential crash detection, and dispatch coordination for road accidents in Rwanda.",
+    "problem": "Road-accident response needs timely incident information and coordination between affected people and emergency services.",
+    "users": "Road users, emergency dispatchers, and response teams.",
+    "solution": "A proposed incident workflow gathers a location and alert, supports dispatcher triage, and coordinates an appropriate response.",
+    "architecture": "Proposed architecture: mobile incident reporting and GPS → incident service → dispatcher interface → response team. Sensor-assisted detection through fixed infrastructure is a separate concept to evaluate.",
+    "features": [],
+    "planned": [
+      "Evaluate manual and sensor-assisted crash reporting.",
+      "Design location sharing, incident triage, and dispatch workflows.",
+      "Validate feasibility with relevant stakeholders and emergency-service operators."
+    ],
+    "decision": "A concept needs to distinguish a possible crash signal from a confirmed emergency. Detection accuracy and dispatch integration require validation before operational use.",
+    "outcome": "A concept aligned with SDG 3: Good Health and Well-being. No response-time reduction or working crash-detection system is claimed.",
+    "reflection": "Personal lessons and research findings are pending documentation.",
+    "missing": [
+      "Repository or concept document, stakeholder validation, team role, and prototype evidence."
+    ],
+    "flow": [
+      "Incident signal",
+      "GPS location",
+      "Dispatcher triage",
+      "Response coordination"
+    ],
+    "flowLabel": "Proposed architecture · concept stage",
+    "sources": []
+  },
+  {
+    "slug": "uwacu",
+    "title": "Uwacu",
+    "subtitle": "Cultural education platform",
+    "category": [
+      "Frontend development",
+      "Innovation"
+    ],
+    "status": "Details pending",
+    "kind": "Frontend project",
+    "role": "Frontend contribution described in my brief. The public repository is empty, so page-level attribution cannot yet be checked.",
+    "tech": [
+      "Frontend stack · to confirm"
+    ],
+    "desc": "A cultural education platform project focused on supporting cultural learning through a digital experience.",
+    "problem": "Cultural knowledge needs engaging, accessible ways to reach learners.",
+    "users": "People interested in cultural education.",
+    "solution": "A learning-oriented frontend; specific screens, content types, and interactions require source or design evidence.",
+    "architecture": "Not yet documented in the available public repository.",
+    "features": [],
+    "planned": [
+      "Document the learning journey, implemented screens, and component architecture."
+    ],
+    "decision": "The learning experience should guide how content is organized. The actual design and implementation decisions remain to be documented.",
+    "outcome": "The public UWACU-FE repository was found but contains no source files at review time. No completed features or deployment are claimed.",
+    "reflection": "Personal retrospective pending source and project documentation.",
+    "missing": [
+      "Non-empty source repository, technology details, screenshots, role evidence, and current status."
+    ],
+    "flow": [
+      "Cultural content",
+      "Learning interface",
+      "Learner exploration"
+    ],
+    "flowLabel": "Product intent · implementation details pending",
+    "sources": [],
+    "repository": "https://github.com/Cynthy15/UWACU-FE"
+  },
+  {
+    "slug": "video-platform",
+    "title": "Video Streaming Platform",
+    "subtitle": "API-driven video discovery",
+    "category": [
+      "Frontend development"
+    ],
+    "status": "Source reviewed",
+    "kind": "Web application project",
+    "role": "Development work in my public repository; precise individual responsibilities and collaboration history need documentation.",
+    "tech": [
+      "React",
+      "Vite",
+      "React Router",
+      "TanStack Query",
+      "Axios"
+    ],
+    "desc": "A video-discovery frontend with routed video and channel pages, API-backed queries, embedded playback, and loading and error states.",
+    "problem": "A video interface needs to coordinate browsing, search, content details, and playback without duplicating request logic.",
+    "users": "Viewers exploring videos and channels.",
+    "solution": "A React application routes between discovery, search, channel, and video-detail experiences with query-based server state.",
+    "architecture": "React Router defines feed, search, channel, and video paths. The inspected video-detail page uses separate TanStack queries for metadata and related results, then embeds a YouTube player.",
+    "features": [
+      "Feed, search, channel, and video routes are wired in App.jsx.",
+      "Video details display API metadata, statistics, description, and channel navigation.",
+      "Related results wait until a video title is available.",
+      "Loading and API-error states are present."
+    ],
+    "planned": [
+      "Runtime validation with configured API access and quota behavior.",
+      "Document test results and accessibility improvements."
+    ],
+    "decision": "The related-video query depends on the title query, avoiding an empty search before metadata arrives. A shared request helper centralizes API access.",
+    "outcome": "Source confirms the routing and playback interface. Hosting a video service or operating an independent streaming backend is not claimed.",
+    "reflection": "Engineering takeaway: distinguish navigation state, query state, and playback state. My personal retrospective is pending.",
+    "missing": [
+      "Current deployment link, exact contribution scope, and runtime test results."
+    ],
+    "flow": [
+      "Search / feed",
+      "API queries",
+      "Video metadata",
+      "Embedded player"
+    ],
+    "flowLabel": "Source-derived application flow",
+    "sources": [
+      {
+        "label": "Application routes",
+        "url": "https://github.com/Cynthy15/VideoPlatform/blob/6c746b6fa491fc9e982c82749836a0083a0d3cb2/src/App.jsx"
+      },
+      {
+        "label": "Video & related queries",
+        "url": "https://github.com/Cynthy15/VideoPlatform/blob/6c746b6fa491fc9e982c82749836a0083a0d3cb2/src/pages/VideoDetails.jsx"
+      },
+      {
+        "label": "Dependencies",
+        "url": "https://github.com/Cynthy15/VideoPlatform/blob/6c746b6fa491fc9e982c82749836a0083a0d3cb2/package.json"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/VideoPlatform"
+  },
+  {
+    "slug": "database-design",
+    "title": "Database Design Projects",
+    "subtitle": "Models, relationships & business rules",
+    "category": [
+      "Databases",
+      "Information systems"
+    ],
+    "status": "Source reviewed",
+    "kind": "Design collection",
+    "role": "Database and information systems work described in my brief, supported by models and design documents in my repositories. Individual design authorship remains to be recorded.",
+    "tech": [
+      "Relational modeling",
+      "Django ORM",
+      "SQLAlchemy",
+      "ER diagrams",
+      "Constraints"
+    ],
+    "desc": "A collection connecting café menu and sales models, blood-supply records, and database design documentation to practical system requirements.",
+    "problem": "Business requirements need a coherent data structure that prevents invalid relationships and preserves meaningful records.",
+    "users": "Developers, system analysts, and teams maintaining business and healthcare information systems.",
+    "solution": "Use explicit relationships, validation constraints, and documented entity models to connect application behavior to stored data.",
+    "architecture": "Café models connect Category → Product → ProductVariant and Order → OrderItem. Blood-supply models separate blood units, requests, and transfers. The café ERD document describes a broader target design, which extends beyond the implemented menu and sales modules.",
+    "features": [
+      "Verified one-to-many relationships in café menu and order models.",
+      "Unique product names per category and unique variant names per product.",
+      "Nonnegative monetary constraints and positive order-item quantities.",
+      "An ERD document covers proposed system entities and relationships."
+    ],
+    "planned": [
+      "Add annotated SQL schemas and normalization walkthroughs.",
+      "Document the gap between target ERD and implemented modules.",
+      "Collect additional database coursework and query examples."
+    ],
+    "decision": "Product variants belong to a product, and order lines retain their own price snapshot. Separating these responsibilities supports menu updates without rewriting historical sales records.",
+    "outcome": "Source-backed examples of relationships and constraints are available. Formal normalization analysis, SQL performance measurements, and a complete migration audit remain pending.",
+    "reflection": "Engineering takeaway: explain why each relationship and constraint exists. Personal lessons from individual database exercises are still to be recorded.",
+    "missing": [
+      "Normalization evidence, annotated SQL, complete coursework artifacts, and design ownership details."
+    ],
+    "flow": [
+      "Category",
+      "Product",
+      "Variant",
+      "Order item"
+    ],
+    "flowLabel": "Source-derived relational chain · order items reference products and optional variants",
+    "sources": [
+      {
+        "label": "Menu relationships & constraints",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/menu/models.py"
+      },
+      {
+        "label": "Order and line-item models",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/BoardsCafe/apps/sales/models.py"
+      },
+      {
+        "label": "Target ERD documentation",
+        "url": "https://github.com/Cynthy15/BaordsCafe-Backend/blob/cf23cf3f953a82ecbaca447b6782103ca35dd8d9/docs/07-database/17-erd.md"
+      },
+      {
+        "label": "Blood-supply data models",
+        "url": "https://github.com/Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM/blob/d7bb620975a2cc7a6f11609c47580f9034afbce2/backend/models.py"
+      }
+    ]
+  },
+  {
+    "slug": "expense-management",
+    "title": "Expense Management System",
+    "subtitle": "Django REST API project",
+    "category": [
+      "Backend engineering",
+      "Databases"
+    ],
+    "status": "Details pending",
+    "kind": "Backend learning project",
+    "role": "Django REST Framework project work described in my brief; matching source and exact contribution scope are pending.",
+    "tech": [
+      "Django",
+      "Django REST Framework",
+      "SQLite",
+      "JWT · to verify"
+    ],
+    "desc": "An expense-management backend project covering user accounts, categories, expense records, and API architecture.",
+    "problem": "People need an organized way to record and review expenses while keeping account data separate.",
+    "users": "Authenticated users managing their own expenses.",
+    "solution": "The project brief describes a REST API with user authentication, categories, and expense operations. Individual features are awaiting implementation verification.",
+    "architecture": "Known context includes a custom user model, SQLite, serializers, permissions, and JWT access and refresh tokens. These are requirements or reported development areas until code is available.",
+    "features": [],
+    "planned": [
+      "Verify authentication, password management, category and expense CRUD.",
+      "Inspect user-scoped permissions, filtering, and pagination.",
+      "Confirm API documentation and automated tests."
+    ],
+    "decision": "User-scoped data access and serializer validation should be checked against the actual code. No architecture decision is presented as implemented without evidence.",
+    "outcome": "Included as a project from my brief; completion status and passing tests are not claimed.",
+    "reflection": "Technical challenges and personal lessons are pending documentation.",
+    "missing": [
+      "Repository, implementation evidence, exact role, test results, and deployment status."
+    ],
+    "flow": [
+      "Authenticated user",
+      "Expense request",
+      "Permissions & validation",
+      "Expense record"
+    ],
+    "flowLabel": "Proposed API workflow · source pending",
+    "sources": []
+  },
+  {
+    "slug": "reach-django-backend",
+    "title": "REACH Django Backend",
+    "subtitle": "Authentication & user management",
+    "category": [
+      "Backend engineering"
+    ],
+    "status": "Details pending",
+    "kind": "Backend case study · REACH",
+    "role": "Backend development described in my brief. The public REACH and Reach_Project repositories reviewed contain frontend code, so the Django source still needs to be matched.",
+    "tech": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "JWT · to verify",
+      "OTP · to verify"
+    ],
+    "desc": "A focused backend case study for REACH account management, email authentication, verification, and API security.",
+    "problem": "The REACH product needs a reliable account and permission model behind its applicant and reviewer journeys.",
+    "users": "Applicants, reviewers, and platform administrators.",
+    "solution": "The brief describes a custom user model, email login, OTP verification, JWT sessions, and password-reset workflows. Two-factor authentication is a planned area.",
+    "architecture": "A Django API is the reported backend direction. It is not verified by the inspected Next.js frontend repositories; no claim is made that the frontend demo auth context implements this backend.",
+    "features": [],
+    "planned": [
+      "Match the Django repository and inspect the user model and authentication handlers.",
+      "Verify email login, OTP expiry, JWT refresh, and password-reset behavior.",
+      "Review permissions, documentation, automated tests, and two-factor planning."
+    ],
+    "decision": "Keep the product prototype and its authentication backend as separate case studies. A demo UI session is not evidence of a secure account system.",
+    "outcome": "Retained as distinct engineering work from my brief; no authentication feature is marked complete without code evidence.",
+    "reflection": "Personal security and testing lessons are pending implementation review.",
+    "missing": [
+      "Django repository, implemented-versus-planned feature list, individual contribution evidence, and test reports."
+    ],
+    "flow": [
+      "Email identity",
+      "Verification",
+      "Session tokens",
+      "Role permissions"
+    ],
+    "flowLabel": "Proposed backend responsibilities · source pending",
+    "sources": [],
+    "related": "reach"
+  },
+  {
+    "slug": "smartstay",
+    "title": "SmartStay / StayNest",
+    "subtitle": "Accommodation discovery prototype",
+    "category": [
+      "Frontend development"
+    ],
+    "status": "Prototype",
+    "kind": "Additional public project",
+    "role": "Public repository project. The README credits Cynthy; the exact implementation scope and collaboration history remain to be documented.",
+    "tech": [
+      "React",
+      "Vite",
+      "TanStack Query",
+      "Axios",
+      "Zustand"
+    ],
+    "desc": "An accommodation browsing prototype with API normalization, cached listing queries, and fallback demonstration data.",
+    "problem": "Accommodation browsing needs to handle inconsistent provider responses and changing search inputs.",
+    "users": "People exploring accommodation options.",
+    "solution": "Normalize external listing data and use query keys that follow search filters to manage repeated requests.",
+    "architecture": "A service module wraps listing and detail requests, normalizes provider responses, caches results, and falls back to mock listings. React query hooks cache results by location, dates, and guest count.",
+    "features": [
+      "Listing and detail query hooks define cache timing and filter-dependent query keys.",
+      "The API service includes normalization and fallback mock listings.",
+      "README describes locally persisted favorites and bookings and simulated authentication; these are not verified real reservations."
+    ],
+    "planned": [
+      "Runtime validation and better distinction between API results and fallback data.",
+      "Verify booking flows and document exact contribution."
+    ],
+    "decision": "Including filters in query keys separates search-result caches. Falling back to sample listings helps a demo remain browsable but must not be confused with live availability.",
+    "outcome": "Source confirms listing query and service logic. Real accommodation reservations or secure production authentication are not claimed.",
+    "reflection": "Engineering takeaway: surface the difference between live data and demo fallbacks. A personal retrospective remains to be added.",
+    "missing": [
+      "Detailed contribution history, runtime validation, and measured outcomes are still to be added."
+    ],
+    "flow": [
+      "Search filters",
+      "Query cache",
+      "API normalization",
+      "Listings / demo data"
+    ],
+    "flowLabel": "Source-derived listing flow",
+    "sources": [
+      {
+        "label": "Listing query hooks",
+        "url": "https://github.com/Cynthy15/SmartStay-Booking-Platform/blob/54ba41cff509b2aff360670bb904168fb7f22df4/src/hooks/useListings.js"
+      },
+      {
+        "label": "API normalization & fallback",
+        "url": "https://github.com/Cynthy15/SmartStay-Booking-Platform/blob/54ba41cff509b2aff360670bb904168fb7f22df4/src/services/api.js"
+      },
+      {
+        "label": "Project documentation",
+        "url": "https://github.com/Cynthy15/SmartStay-Booking-Platform/blob/54ba41cff509b2aff360670bb904168fb7f22df4/README.md"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/SmartStay-Booking-Platform"
+  },
+  {
+    "slug": "book-explorer",
+    "title": "Book Explorer",
+    "subtitle": "Book discovery & saved favorites",
+    "category": [
+      "Frontend development"
+    ],
+    "status": "Source reviewed",
+    "kind": "Additional public project",
+    "role": "The project README credits Cynthia. Specific code ownership and collaboration history are not independently established.",
+    "tech": [
+      "HTML",
+      "JavaScript",
+      "Tailwind CSS",
+      "Browser storage"
+    ],
+    "desc": "A book-discovery interface with search, categories, loading states, and locally saved favorites.",
+    "problem": "Readers need a simple way to discover books and keep a personal shortlist.",
+    "users": "Readers browsing and saving book recommendations.",
+    "solution": "A lightweight multipage frontend with modular JavaScript for search, rendering, and saved favorites.",
+    "architecture": "ES modules separate book retrieval, browsing, category views, and favorite storage. Favorites use localStorage and a book key to avoid duplicates.",
+    "features": [
+      "Browse script handles search-button and Enter-key queries.",
+      "Loading, no-results, and error messages are implemented.",
+      "Favorite helpers add, remove, and check saved books by key."
+    ],
+    "planned": [
+      "Runtime and accessibility validation, plus tests for saved-state edge cases."
+    ],
+    "decision": "Separate storage helpers from card rendering so favorite state can be shared across pages. Browser storage provides local convenience without implying a cloud account.",
+    "outcome": "Source confirms browsing logic and local favorites. The README provides a deployment link; its current availability has not been verified.",
+    "reflection": "Engineering takeaway: even small interfaces benefit from clear boundaries between data retrieval, display, and persistence. Personal lessons remain to be added.",
+    "missing": [
+      "Exact contribution record, current deployment validation, and user feedback."
+    ],
+    "flow": [
+      "Search query",
+      "Book results",
+      "Favorite selection",
+      "Local storage"
+    ],
+    "flowLabel": "Source-derived discovery flow",
+    "sources": [
+      {
+        "label": "Browse and search",
+        "url": "https://github.com/Cynthy15/Phase-One-Capstone-Project/blob/3731bec942aa463b372f56b4e21bb49220994c77/scripts/browse.js"
+      },
+      {
+        "label": "Favorite storage",
+        "url": "https://github.com/Cynthy15/Phase-One-Capstone-Project/blob/3731bec942aa463b372f56b4e21bb49220994c77/scripts/fav.js"
+      },
+      {
+        "label": "Project README",
+        "url": "https://github.com/Cynthy15/Phase-One-Capstone-Project/blob/3731bec942aa463b372f56b4e21bb49220994c77/README.md"
+      }
+    ],
+    "repository": "https://github.com/Cynthy15/Phase-One-Capstone-Project"
+  }
+]

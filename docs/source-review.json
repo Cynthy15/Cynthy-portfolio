@@ -1,0 +1,1926 @@
+{
+  "reviewDate": "2026-10-28",
+  "method": "Read-only public GitHub source review. Source inspection is not execution or proof of individual authorship.",
+  "repositories": [
+    {
+      "repository": "Cynthy15/REACH",
+      "commit": "aecec64797d40bd130f0a832431de62b359ee2dd",
+      "files": [
+        {
+          "path": ".eslintrc.json",
+          "sha": "bffb357a7122523ec94045523758c4b825b448ef"
+        },
+        {
+          "path": ".gitignore",
+          "sha": "5ef6a520780202a1d6addd833d800ccb1ecac0bb"
+        },
+        {
+          "path": "DELIVERY_SUMMARY.txt",
+          "sha": "bfdde00595f08089cb76c2d0b271c44c89c34ee9"
+        },
+        {
+          "path": "components.json",
+          "sha": "8a440633a1832307a5a923787585ada23fedd71f"
+        },
+        {
+          "path": "next.config.js",
+          "sha": "ad1c3e3ea9b73ade37178e71e9ccec22cb4d8b2e"
+        },
+        {
+          "path": "package.json",
+          "sha": "a8b82230e0e2e8e007c875405df0902b6e1bc052"
+        },
+        {
+          "path": "postcss.config.js",
+          "sha": "33ad091d26d8a9dc95ebdf616e217d985ec215b8"
+        },
+        {
+          "path": "src/App.tsx",
+          "sha": "43c1450c4e6260749d56c31c49f45036a6478c7c"
+        },
+        {
+          "path": "src/app/(applicant)/application-form/page.tsx",
+          "sha": "ef95caded09bf830a2713262a48918169b402602"
+        },
+        {
+          "path": "src/app/(applicant)/dashboard/page.tsx",
+          "sha": "41dc411a10b56f5382c94f73df57caec8605b2cf"
+        },
+        {
+          "path": "src/app/(applicant)/eligibility/page.tsx",
+          "sha": "31e4ab2e5ef01da790151133d082a8bf552c1f36"
+        },
+        {
+          "path": "src/app/(applicant)/layout.tsx",
+          "sha": "7abe3d67bcc1def8e10aab34dace2e8ef9c4b547"
+        },
+        {
+          "path": "src/app/(applicant)/loan-purpose/page.tsx",
+          "sha": "0192988a06969340ab884c2d9062eb50d6602f10"
+        },
+        {
+          "path": "src/app/(applicant)/page.tsx",
+          "sha": "b68290a522bf72ff5dea5ff9df29b0cbd6057a76"
+        },
+        {
+          "path": "src/app/(applicant)/signin/page.tsx",
+          "sha": "d5cd2b68e453da1416c9945e3222c3cf5ab0b5b1"
+        },
+        {
+          "path": "src/app/(applicant)/signup/page.tsx",
+          "sha": "2649d3353444170f497bf8b0e033c217f68ffa9a"
+        },
+        {
+          "path": "src/app/(applicant)/tracker/page.tsx",
+          "sha": "49aed07f3f29324395339764bff4827756d349d0"
+        },
+        {
+          "path": "src/app/(applicant)/verify-tin/page.tsx",
+          "sha": "856b0097a698d7220ca41455e3c73e2674e9b725"
+        },
+        {
+          "path": "src/app/admin/access/page.tsx",
+          "sha": "5c6e4c5e306bc0b53895dc5eee3d176507a764f8"
+        },
+        {
+          "path": "src/app/admin/backup/page.tsx",
+          "sha": "7b6eb0f326a1a1660821a0401ce2dc177ae93cef"
+        },
+        {
+          "path": "src/app/admin/dashboard/page.tsx",
+          "sha": "317e5e896579baa76cb94091e5fa36ee5db116f6"
+        },
+        {
+          "path": "src/app/admin/layout.tsx",
+          "sha": "956f51d876201f9e0131150006ef484fc35dddb8"
+        },
+        {
+          "path": "src/app/admin/login/layout.tsx",
+          "sha": "6efb71c9926d71b4650e13bf142283c98e791a00"
+        },
+        {
+          "path": "src/app/admin/login/page.tsx",
+          "sha": "ab2c04143e12b2d915653157d05a89a0a59b4ed1"
+        },
+        {
+          "path": "src/app/admin/response/page.tsx",
+          "sha": "2ee635a1dd3bcfde443144ea62e0c1e54e099cb1"
+        },
+        {
+          "path": "src/app/admin/settings/page.tsx",
+          "sha": "d712cb77d0d2bcb21940151995a7275fbe0d004b"
+        },
+        {
+          "path": "src/app/approver/dashboard/page.tsx",
+          "sha": "0ff5712f244ead8d179da41633f2dce24476686d"
+        },
+        {
+          "path": "src/app/approver/layout.tsx",
+          "sha": "ca778921d1e35e60a78b7b030148a6be0d2aacd5"
+        },
+        {
+          "path": "src/app/approver/login/layout.tsx",
+          "sha": "cf0b7f426b5d7986b934d1423692d45dc0f71f62"
+        },
+        {
+          "path": "src/app/approver/login/page.tsx",
+          "sha": "919ba8cbddf0f46af9d040d8456db43f3e5962ee"
+        },
+        {
+          "path": "src/app/approver/reports/page.tsx",
+          "sha": "a8ff22fd19744f9c9405e717c1e86f76d40027de"
+        },
+        {
+          "path": "src/app/approver/request-access/page.tsx",
+          "sha": "317bd224befd2349ac5731877725c345fceb3927"
+        },
+        {
+          "path": "src/app/approver/reviews/page.tsx",
+          "sha": "6dcfe6169a5accc6505f291e7c202ae75eed8106"
+        },
+        {
+          "path": "src/app/approver/settings/page.tsx",
+          "sha": "8a1f1201ad848c8fe9116c1b188ee2b5d49b7d9a"
+        },
+        {
+          "path": "src/app/error.tsx",
+          "sha": "3184165a2c74d17108396da8e311168438137414"
+        },
+        {
+          "path": "src/app/globals.css",
+          "sha": "c3ff766cf17c637bc5e0d66c88648b7d749f02ed"
+        },
+        {
+          "path": "src/app/icon.svg",
+          "sha": "3d3cf1b7b83ef6f92eda9ac74d178ea76363af13"
+        },
+        {
+          "path": "src/app/layout.tsx",
+          "sha": "1f880c82b7344d11a59dc9fa20a2cc8f141d7f72"
+        },
+        {
+          "path": "src/app/not-found.tsx",
+          "sha": "a26bd7e19973ca3427d36f900617252c47296b3a"
+        },
+        {
+          "path": "src/app/page.tsx",
+          "sha": "c917e04b4707202e0e3c0fddb90c93f008a1022a"
+        },
+        {
+          "path": "src/components/applicant/ApplicantView.tsx",
+          "sha": "83196254165dd4b48858f03b1b83783f0074cb51"
+        },
+        {
+          "path": "src/components/applicant/StatusView.tsx",
+          "sha": "b0ad8d419ad1ab4e9018cc47da0795155f36e28b"
+        },
+        {
+          "path": "src/components/approver/ApproverDashboard.tsx",
+          "sha": "177afde1fc9c07d860dac58bba73351a7dc1d390"
+        },
+        {
+          "path": "src/components/approver/ReportsView.tsx",
+          "sha": "4acf3a529c5a8d3aef761292e56bf435d0b97bb1"
+        },
+        {
+          "path": "src/components/approver/ReviewsView.tsx",
+          "sha": "7b46be71667eb651bb66db0b125534ec649e3793"
+        },
+        {
+          "path": "src/components/footer.tsx",
+          "sha": "c6047396831a2bf4a8b94c8fa9848d1c946c5707"
+        },
+        {
+          "path": "src/components/layout.tsx",
+          "sha": "0143a73715caadb716ef6d40c2302f73ed4947bf"
+        },
+        {
+          "path": "src/components/navbar.tsx",
+          "sha": "7ac2f065bec06833d4b045cdf91ff6d8991f9393"
+        },
+        {
+          "path": "src/components/settings/SettingsView.tsx",
+          "sha": "d1a2676162c140adf17eb90e69862a54200251d1"
+        },
+        {
+          "path": "src/components/shared/LoginView.tsx",
+          "sha": "a3ddfbfc98241c190eac7d107e84b89f16583b71"
+        },
+        {
+          "path": "src/components/shared/MessagesView.tsx",
+          "sha": "7242479a9b8321d845528dff5817e7f10d4ce1f7"
+        },
+        {
+          "path": "src/components/shared/SettingsView.tsx",
+          "sha": "d8b244dcce1b210f2e9f24540711e619e9908177"
+        },
+        {
+          "path": "src/components/shared/layout.tsx",
+          "sha": "79ddfe9fbb0f4e1c4204ff997c7379c6b4a412ee"
+        },
+        {
+          "path": "src/components/status/StatusView.tsx",
+          "sha": "b310a7036f54068a5ee128fc5e27ce496dfb0d05"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "sha": "f000e3ef5176395b067dfc3f3e1256a80c450015"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "sha": "36496a28727a3643b4212a14225d4f6cbd50bda5"
+        },
+        {
+          "path": "src/components/ui/card.tsx",
+          "sha": "f62edea578d50058bef5e6bcc178b88d145564e9"
+        },
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "sha": "b652cd8f6f6b9680d92a69cce77ea32115176dc8"
+        },
+        {
+          "path": "src/components/ui/input.tsx",
+          "sha": "68551b9276b4164a8263aa58d385db30f81a4453"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "sha": "534182176bf87f9308355514adc884d2b69750a5"
+        },
+        {
+          "path": "src/components/ui/progress.tsx",
+          "sha": "5c87ea4865610374cdc591d1619157b4d8909a87"
+        },
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "sha": "e9bde1793628d1d76ab8e5700c2484547e8bbbf2"
+        },
+        {
+          "path": "src/components/ui/slider.tsx",
+          "sha": "c31c2b3bc1a9f1677b32250668a6d47fe5a353ce"
+        },
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "sha": "26eb109120e2ee43feddb68900f353a119976c41"
+        },
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "sha": "4d858bb6b02662c749d3cb334129a9a1977b0c51"
+        },
+        {
+          "path": "src/context/AuthContext.tsx",
+          "sha": "b131948d5a59ddff4d25bc974f7e837b661a1ca6"
+        },
+        {
+          "path": "src/contexts/AuthContext.tsx",
+          "sha": "76cd506f08de34892008301a178b5f50119c3061"
+        },
+        {
+          "path": "src/contexts/firebase.ts",
+          "sha": "ee0565851ca4e7f2e0dd9847c95293e95d45c709"
+        },
+        {
+          "path": "src/hooks/useTheme.ts",
+          "sha": "1aa48db7d069a7486fc2d025957d2c993d744c84"
+        },
+        {
+          "path": "src/lib/bankConditions.ts",
+          "sha": "a8db88735b186a41be11cdc968e827905f234abd"
+        },
+        {
+          "path": "src/lib/loanEligibility.ts",
+          "sha": "2453586d154d7d715797ef884a97d8fb1d149cb4"
+        },
+        {
+          "path": "src/lib/mockData.ts",
+          "sha": "7cbb782d2d459a172612830e56bf8c05c73e28db"
+        },
+        {
+          "path": "src/lib/notificationStore.ts",
+          "sha": "35b34d8cc0d8442674176e53d8d1a6905a598e58"
+        },
+        {
+          "path": "src/lib/util.ts",
+          "sha": "e63f197105d742003fee5a29453a07569916cf8e"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha": "7b2ad842e0e4bf8da10aa39bc3c6dbf39c4994ea"
+        },
+        {
+          "path": "src/types.ts",
+          "sha": "4d6d836e8d23b42f4e8ccab188e07c9d3cc8a15b"
+        },
+        {
+          "path": "src/types/index.ts",
+          "sha": "4d6d836e8d23b42f4e8ccab188e07c9d3cc8a15b"
+        },
+        {
+          "path": "src/utils/util.ts",
+          "sha": "e63f197105d742003fee5a29453a07569916cf8e"
+        },
+        {
+          "path": "src/views/ApplicantView.tsx",
+          "sha": "a9971d84144758b4947b7f8a50f3d0863005903e"
+        },
+        {
+          "path": "src/views/ApproverDashboard.tsx",
+          "sha": "604d72c4607bb904028c0a946c68c64190d69d46"
+        },
+        {
+          "path": "src/views/LoginView.tsx",
+          "sha": "a3ddfbfc98241c190eac7d107e84b89f16583b71"
+        },
+        {
+          "path": "src/views/MessagesView.tsx",
+          "sha": "31b1bbe650640cb25a0c4ca0ec3049dba824dae5"
+        },
+        {
+          "path": "src/views/ReportsView.tsx",
+          "sha": "0458fa0662a5e6043b412ba6f325fd19b2271f97"
+        },
+        {
+          "path": "src/views/ReviewsView.tsx",
+          "sha": "1ebcc0e3ff039b96f3962403efd7f03af655da49"
+        },
+        {
+          "path": "src/views/SettingsView.tsx",
+          "sha": "bff7901daa89398ae1588eb7bc105973341e18e8"
+        },
+        {
+          "path": "src/views/StatusView.tsx",
+          "sha": "294c81c4c24cb2f5f24198b4779e9eb6eedf1e8d"
+        },
+        {
+          "path": "tailwind.config.ts",
+          "sha": "d315b4555402d9e99d77217beae084eeb0078fc6"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha": "e411dba5998e904cb82242ffbefb3b46172bc274"
+        },
+        {
+          "path": "ui-design/DESIGN_SYSTEM.md",
+          "sha": "a22915c4137fd0fb5d7c46a3c23e3366bb74ffcc"
+        },
+        {
+          "path": "ui-design/IMPLEMENTATION_GUIDE.md",
+          "sha": "0fd2dca77e738a9bcad6984c9ca17e7ea497be6e"
+        },
+        {
+          "path": "ui-design/README.md",
+          "sha": "1b1d707e2b9769195123871847fb9556789349c7"
+        },
+        {
+          "path": "ui-design/index.html",
+          "sha": "98dc32e92bf4fb20b1fa29ee9c9b2818e4e08191"
+        },
+        {
+          "path": "ui-design/pages/eligibility-dashboard.html",
+          "sha": "448c98538ff21f4c23acb7b895da625f97e14e2c"
+        },
+        {
+          "path": "ui-design/pages/identity-portal.html",
+          "sha": "76912f251b588cce934134468f682fbd7782d6ab"
+        },
+        {
+          "path": "ui-design/pages/loan-purpose.html",
+          "sha": "7c1ae38f125460136676087971f2ae3c909c169e"
+        },
+        {
+          "path": "ui-design/pages/narrative-form.html",
+          "sha": "f56df9202fa82583981ec64a9194c202598c7231"
+        },
+        {
+          "path": "ui-design/pages/real-time-tracker.html",
+          "sha": "fde082a518d26b4d1872c4561fe53e76b592ba8e"
+        },
+        {
+          "path": "ui-design/styles.css",
+          "sha": "32ad8625ae64a3a5319b17176ae599c5d3d7b6d2"
+        }
+      ],
+      "reviewedFiles": [
+        "src/lib/loanEligibility.ts",
+        "src/context/AuthContext.tsx"
+      ]
+    },
+    {
+      "repository": "Cynthy15/BaordsCafe-Backend",
+      "commit": "cf23cf3f953a82ecbaca447b6782103ca35dd8d9",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "ad03fbfe1d71a8e49def43df0e0413ad996ac2f5"
+        },
+        {
+          "path": "BoardsCafe/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/audit_logs/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/audit_logs/apps.py",
+          "sha": "6d072ab80b50c9d748fd957cdf1e2ac882c5c59e"
+        },
+        {
+          "path": "BoardsCafe/apps/business/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/business/admin.py",
+          "sha": "ae8f856fa07c05119aae4c623a85aa518ead442a"
+        },
+        {
+          "path": "BoardsCafe/apps/business/apps.py",
+          "sha": "32c3d0eb1892d866a67f768f813e49fc267539a3"
+        },
+        {
+          "path": "BoardsCafe/apps/business/migrations/0001_initial.py",
+          "sha": "f5de16dd5bfebbeb82f0cc6feb9f3c9e71ee047c"
+        },
+        {
+          "path": "BoardsCafe/apps/business/migrations/0002_initial.py",
+          "sha": "fcce96e338a8e951f5f065d719f2b4a7c5eeccd8"
+        },
+        {
+          "path": "BoardsCafe/apps/business/migrations/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/business/models.py",
+          "sha": "d3a144a23a37fa2ec9277e0d6c5480e2bd9fd9c5"
+        },
+        {
+          "path": "BoardsCafe/apps/business/serializers.py",
+          "sha": "0ffd7c5c07598a1b98bbe73a0fa5a02a5fd780ce"
+        },
+        {
+          "path": "BoardsCafe/apps/business/tests/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/business/tests/test_business_permissions.py",
+          "sha": "62a248c97e0d479cc431a88aad0cf28f67f1a78e"
+        },
+        {
+          "path": "BoardsCafe/apps/business/urls.py",
+          "sha": "e55819525110c32ba9505c100fbbc58feeb485bc"
+        },
+        {
+          "path": "BoardsCafe/apps/business/views.py",
+          "sha": "b94ad3e9961619c59ffe38dd2f1c231791b82ed2"
+        },
+        {
+          "path": "BoardsCafe/apps/dashboard/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/dashboard/apps.py",
+          "sha": "3208e24c96c879dccbc1ce818519ecff6b0037dc"
+        },
+        {
+          "path": "BoardsCafe/apps/finance/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/finance/apps.py",
+          "sha": "fd6075c264b22ff3e66e4ccab16133a262739a85"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/admin.py",
+          "sha": "c4ea08a1fb4a7a140a97df71fc251b22b6c9b3a7"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/apps.py",
+          "sha": "7e42719417d76863f2e399143ee05652da70e0ca"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/migrations/0001_initial.py",
+          "sha": "6e86f34001469705e2e01275647a95baba362e99"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/migrations/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/models.py",
+          "sha": "926dfcb8aaa8579851ffd1ff3b7a5ac9c9158377"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/serializers.py",
+          "sha": "86389a3d94953419ec672d3995b7c634aed27d58"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/signals.py",
+          "sha": "481c157efa0dcd8a79479d53993e93de61e85d30"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/tests/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/tests/test_inventory.py",
+          "sha": "279a82b66b8663580543f4b59f9f39aef62d3569"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/urls.py",
+          "sha": "fe77a3928bd992b2f664e35b0c0f933112152f64"
+        },
+        {
+          "path": "BoardsCafe/apps/inventory/views.py",
+          "sha": "fa145ffda1780e51a3472ca6079be4acc6148f0e"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/apps.py",
+          "sha": "09ed11047ffb3adc0b28a5c49cb2b9a474f918e6"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/models.py",
+          "sha": "ed126d2ac177bc1777d9b78ef4438ce69c5b8643"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/serializers.py",
+          "sha": "d3a2429eab94fb6fdb19bc7940691d65137d7ca4"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/urls.py",
+          "sha": "81cf5203ee30adfb67ddca2650622d9e881608ca"
+        },
+        {
+          "path": "BoardsCafe/apps/menu/views.py",
+          "sha": "fe430bc49df56d8769bd02d38ce61683c17ee4eb"
+        },
+        {
+          "path": "BoardsCafe/apps/notifications/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/notifications/apps.py",
+          "sha": "3ef13b041810d9bfc39fbd5c08a513dab43dfa1b"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/apps.py",
+          "sha": "67c4b6f1d74575fc416fb8c59511eeddddd3ec45"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/models.py",
+          "sha": "6ee8dc5eb86e0412b6b665f2a0d85cf7e81a8996"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/serializers.py",
+          "sha": "aeeb3763a038a8f8dcb1e013a19ec218a3cd4f6e"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/services.py",
+          "sha": "067188b80ba8514d2d0c27c55c87b56c4a39ce65"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/throttling.py",
+          "sha": "5aeb33564edee6635f67f328d0743b400294cd15"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/urls.py",
+          "sha": "1669297909a4f8fefe3090cf72baf86749f3e1f1"
+        },
+        {
+          "path": "BoardsCafe/apps/otp/views.py",
+          "sha": "85fd54de64e861982127eddf96d7f8508b6ed4ca"
+        },
+        {
+          "path": "BoardsCafe/apps/purchasing/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/purchasing/apps.py",
+          "sha": "eba4fd0ddd3fcf89e7769706bac304b4828f3478"
+        },
+        {
+          "path": "BoardsCafe/apps/recipes/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/recipes/apps.py",
+          "sha": "21dcff22a2cb4c2334c30e88f341e442d7689d11"
+        },
+        {
+          "path": "BoardsCafe/apps/reports/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/reports/apps.py",
+          "sha": "b9767e80bb72404686b47401c3edacf96dcefd40"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/admin.py",
+          "sha": "5eb66a4af84ddd4f1e1c321ce413097fd92f8a4d"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/apps.py",
+          "sha": "973cd2b0534fa1c65da0404713d64ef2afdeb279"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/migrations/0001_initial.py",
+          "sha": "adb8732fcb3f6656f490affcafbf62020ffb0e09"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/migrations/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/models.py",
+          "sha": "4d21c1688225e9bc50089820ccb0bcd07cddabe8"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/serializers.py",
+          "sha": "b24d73992aa6964dd14371c4d1c3a9a6ca1bb62f"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/urls.py",
+          "sha": "3a9377be44cfcf65fd9e4bc35226e845818166c3"
+        },
+        {
+          "path": "BoardsCafe/apps/roles/views.py",
+          "sha": "bd8361a7ad08bf4423691185afcf45792a979a93"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/apps.py",
+          "sha": "f54800e7d630a7211abb869b03fdd8ef4774b610"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/models.py",
+          "sha": "afbb5c96e4992b4888fd92569e59f8067eb008e7"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/serializers.py",
+          "sha": "8dccf84e02464f8f89d91fa955c78da951231d07"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/urls.py",
+          "sha": "28480c42a434ec478e73a2016e28c78d3fe6e689"
+        },
+        {
+          "path": "BoardsCafe/apps/sales/views.py",
+          "sha": "c0937567833be654c29b4fbb07ce7ded26a06d0e"
+        },
+        {
+          "path": "BoardsCafe/apps/users/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/users/admin.py",
+          "sha": "bb75da3b4611c60b03739968bb05534262918049"
+        },
+        {
+          "path": "BoardsCafe/apps/users/apps.py",
+          "sha": "cf464de51b83cf5cdc6237a0f687f11879664891"
+        },
+        {
+          "path": "BoardsCafe/apps/users/managers.py",
+          "sha": "1c05bad9c2c6800644c08260994628f4cb933058"
+        },
+        {
+          "path": "BoardsCafe/apps/users/migrations/0001_initial.py",
+          "sha": "dfc3abed00aefada0bbb1d26f7c335e71d1b71b1"
+        },
+        {
+          "path": "BoardsCafe/apps/users/migrations/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/users/models.py",
+          "sha": "38c1ff12291115495bd4af0f24c2f98f05119e77"
+        },
+        {
+          "path": "BoardsCafe/apps/users/serializers.py",
+          "sha": "ef26533c17e41d414d0a10d54ea327ee926eb448"
+        },
+        {
+          "path": "BoardsCafe/apps/users/tests/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/users/tests/test_authentication.py",
+          "sha": "3bede9f1b9a57b6a1935a0316eb62e2a48c1b6ae"
+        },
+        {
+          "path": "BoardsCafe/apps/users/urls.py",
+          "sha": "53dc2db2e32b94cc4f41b8fc363e4a32b77805b9"
+        },
+        {
+          "path": "BoardsCafe/apps/users/views.py",
+          "sha": "29b9dd1f3c0232bfed2478656f757acf6d25a96f"
+        },
+        {
+          "path": "BoardsCafe/apps/waste/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/apps/waste/apps.py",
+          "sha": "e2bf8f1cee24d68ba95fe80ac345eb5c118be878"
+        },
+        {
+          "path": "BoardsCafe/asgi.py",
+          "sha": "d076e81f12a417d83bd7457ed858cf925a682ab1"
+        },
+        {
+          "path": "BoardsCafe/core/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/core/email.py",
+          "sha": "559f21da23e9763abc265b9280f933764bed9ff7"
+        },
+        {
+          "path": "BoardsCafe/core/exceptions.py",
+          "sha": "37e443b3846135e99a9b5e255ab16db7fafe37d5"
+        },
+        {
+          "path": "BoardsCafe/core/health_urls.py",
+          "sha": "29e531c9f067765d3f53e18e49e71d68a72bb3cc"
+        },
+        {
+          "path": "BoardsCafe/core/pagination.py",
+          "sha": "ba41850982ee364e676a2d1091f09d142e8b7f50"
+        },
+        {
+          "path": "BoardsCafe/core/permissions.py",
+          "sha": "9c753a766291c2fdfeafb56cabda1c4006fc982f"
+        },
+        {
+          "path": "BoardsCafe/core/responses.py",
+          "sha": "b48b4346ab361e9bcc7b0497c4eab060f6704a9d"
+        },
+        {
+          "path": "BoardsCafe/core/serializers.py",
+          "sha": "4264344d5a5a5f90d6b7fbc2677fbf91ba5ff768"
+        },
+        {
+          "path": "BoardsCafe/core/tests/__init__.py",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "BoardsCafe/core/tests/test_foundation.py",
+          "sha": "97915149f60fef8975cea8387f2a0f7673fa4ca7"
+        },
+        {
+          "path": "BoardsCafe/core/throttling.py",
+          "sha": "c0c6b70c846f3c306728ad24c349bd7991e300e1"
+        },
+        {
+          "path": "BoardsCafe/core/views.py",
+          "sha": "21cdf988a4971cbace9cfde3851cfd21a8b625bc"
+        },
+        {
+          "path": "BoardsCafe/settings.py",
+          "sha": "cc92cde0bd79f5e423b6409060d348c41786f090"
+        },
+        {
+          "path": "BoardsCafe/urls.py",
+          "sha": "aaf53b1ab548dd5e4a5b610afec18f805a666761"
+        },
+        {
+          "path": "BoardsCafe/wsgi.py",
+          "sha": "0c06da364f8d676a8360a43a7a25f0d82f4b33b3"
+        },
+        {
+          "path": "README.md",
+          "sha": "1cd431cd7a4163e294ad55b4143e828670d2dac6"
+        },
+        {
+          "path": "docs/01-requirements/01-project-overview.md",
+          "sha": "9b85743dbd28c9171c2aa8bccfd376d6e5b57178"
+        },
+        {
+          "path": "docs/01-requirements/02-business-requirements.md",
+          "sha": "066bab8c56082b3bc4ea5482f89b6cb4593b500d"
+        },
+        {
+          "path": "docs/01-requirements/03-functional-requirements.md",
+          "sha": "77c0c4b0a20784947773d3ac448472da840d0ffa"
+        },
+        {
+          "path": "docs/01-requirements/04-user-roles-permissions.md",
+          "sha": "3f067b07978378abd1dc1a07e56ea01106cef59f"
+        },
+        {
+          "path": "docs/02-business-processes/05-business-workflows.md",
+          "sha": "c0ce1c17c53cabd7495789c69694a213aa4ad5ce"
+        },
+        {
+          "path": "docs/03-products-inventory/06-products-recipes.md",
+          "sha": "fc0e60a2bd666fbe7b4df16f0b8afdee050a3303"
+        },
+        {
+          "path": "docs/03-products-inventory/07-inventory-management.md",
+          "sha": "880b72724558209f97c2151186bfa2accbb8e74b"
+        },
+        {
+          "path": "docs/03-products-inventory/08-batch-expiry-management.md",
+          "sha": "7a7d445867b26c1bed02f0ce8e84afa2e2ed9c76"
+        },
+        {
+          "path": "docs/04-sales-operations/09-pos-order-management.md",
+          "sha": "58ef5b53aa1da9912e4dcde01775406533598e7e"
+        },
+        {
+          "path": "docs/05-finance-purchasing/10-purchases-suppliers.md",
+          "sha": "3fde814ea9a24105ed5d98a9881bc521cec3321b"
+        },
+        {
+          "path": "docs/05-finance-purchasing/11-expenses-payments.md",
+          "sha": "96e1284ba721bd5c263973b36e90b5a60d787350"
+        },
+        {
+          "path": "docs/05-finance-purchasing/12-waste-management.md",
+          "sha": "11d9b3eaf4fb03f14c80dce98ebaefcd32fe79db"
+        },
+        {
+          "path": "docs/06-monitoring/13-reports-dashboard.md",
+          "sha": "2245ab75dfc6f76ae1641e059f307a0a53d57f42"
+        },
+        {
+          "path": "docs/06-monitoring/14-notifications-alerts.md",
+          "sha": "072b650ec8e5629405e2229a677392d43525e58c"
+        },
+        {
+          "path": "docs/06-monitoring/15-audit-logging.md",
+          "sha": "b0736516b782b6c7289a78c586596833049e755b"
+        },
+        {
+          "path": "docs/07-database/16-database-design.md",
+          "sha": "03a0cff8b0d5ab9a4ca6137ce5a30944014183a9"
+        },
+        {
+          "path": "docs/07-database/17-erd.md",
+          "sha": "4d18782e54810120e81042c50fb8659cb3b823cc"
+        },
+        {
+          "path": "docs/08-application-design/18-api-documentation.md",
+          "sha": "bf85e1332a3df0826178c0d28b478c5a6dce53cf"
+        },
+        {
+          "path": "docs/08-application-design/19-ui-ux-requirements.md",
+          "sha": "b7e1c531144d304a7f4b3b38932a99598375636d"
+        },
+        {
+          "path": "docs/08-application-design/20-technical-architecture.md",
+          "sha": "71451925ba729b3adf3e2f0cadc8e58af0a2331f"
+        },
+        {
+          "path": "docs/09-security/21-security-requirements.md",
+          "sha": "e7e397f8ce71f26ad0e5edb0268c9b2ab12b9dc7"
+        },
+        {
+          "path": "manage.py",
+          "sha": "9ddadf702a0823aab2d57090b6facd2157373d67"
+        },
+        {
+          "path": "requirements.txt",
+          "sha": "3d0c959d19570e7661eb3a056eae1318aa571c72"
+        }
+      ],
+      "reviewedFiles": [
+        "BoardsCafe/apps/menu/models.py",
+        "BoardsCafe/apps/menu/serializers.py",
+        "BoardsCafe/apps/menu/urls.py",
+        "BoardsCafe/apps/sales/models.py",
+        "BoardsCafe/apps/sales/serializers.py",
+        "BoardsCafe/apps/sales/views.py",
+        "BoardsCafe/apps/sales/urls.py",
+        "BoardsCafe/apps/users/tests/test_authentication.py",
+        "BoardsCafe/urls.py",
+        "BoardsCafe/settings.py",
+        "docs/07-database/17-erd.md"
+      ]
+    },
+    {
+      "repository": "Cynthy15/MedDelivery",
+      "commit": "4e98c86bed33718a34c76219b4236f587584a883",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "097fc66b161f65619306eac2a8895b3e30fcfa39"
+        },
+        {
+          "path": "LICENSE",
+          "sha": "836932ff6ed07c60551da8c667a9f0fe8d1e562e"
+        },
+        {
+          "path": "README.md",
+          "sha": "51e94a813534e6e1df5b37eacaf7634c7d31de59"
+        },
+        {
+          "path": "components.json",
+          "sha": "8d886db5756307e013bc8ae97c05220fb7b6ab7a"
+        },
+        {
+          "path": "dist/assets/index-CQ3zred3.js",
+          "sha": "c447b8fcc1aefef12171ffb43035a8d80e13a368"
+        },
+        {
+          "path": "dist/assets/index-CS5faf0O.css",
+          "sha": "8498b6b8708357b6bdbf50ebfd6f32ace408f8cb"
+        },
+        {
+          "path": "dist/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3"
+        },
+        {
+          "path": "dist/icons.svg",
+          "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9"
+        },
+        {
+          "path": "dist/index.html",
+          "sha": "ee5ec4ec40f13d028e8d81a57470ce20e8227e68"
+        },
+        {
+          "path": "eslint.config.js",
+          "sha": "cca229dbf343d0dd372ea61691642585bfcde152"
+        },
+        {
+          "path": "next-env.d.ts",
+          "sha": "9edff1c7cacb3bfac9a1eadcf6f51eaa99565e38"
+        },
+        {
+          "path": "next.config.mjs",
+          "sha": "2a572a125b3f25b35fb368b04045cfb70b3a86e9"
+        },
+        {
+          "path": "package.json",
+          "sha": "b6a5dd9efac77cd5cb4c44fdcde24f06fe8111db"
+        },
+        {
+          "path": "postcss.config.mjs",
+          "sha": "263feb17dce5e57ea1651e04618ab484a6e628fb"
+        },
+        {
+          "path": "public/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3"
+        },
+        {
+          "path": "public/icons.svg",
+          "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9"
+        },
+        {
+          "path": "src/App.css",
+          "sha": "f90339d8f765fa2c69d9a341959a8ddb9fff5720"
+        },
+        {
+          "path": "src/app/(public)/(main)/layout.tsx",
+          "sha": "ae896b49e29af286fb6e930ba45e4a63bd851103"
+        },
+        {
+          "path": "src/app/(public)/(main)/page.tsx",
+          "sha": "f895beeef0b375bab9e1ae1bfc2ba628d4e62578"
+        },
+        {
+          "path": "src/app/(public)/(main)/register-pharmacy/page.tsx",
+          "sha": "d2067f22dfb6b91b55e9e726802f0fece4e973ba"
+        },
+        {
+          "path": "src/app/(public)/(main)/signup/page.tsx",
+          "sha": "96898263e380a5ebe9eae1ee88ae16bc8953954d"
+        },
+        {
+          "path": "src/app/(public)/(patient)/chatbot/page.tsx",
+          "sha": "c78327b93c968687b9dcfc536bd179e75eb2195a"
+        },
+        {
+          "path": "src/app/(public)/(patient)/insurance/page.tsx",
+          "sha": "3a1d0d09de472a5ecd8c3fc5ef38371f2d898855"
+        },
+        {
+          "path": "src/app/(public)/(patient)/layout.tsx",
+          "sha": "ee1191f785b8ceada1bce67672233b63f61aa721"
+        },
+        {
+          "path": "src/app/(public)/(patient)/locations/page.tsx",
+          "sha": "946979be09fb57156a7586158cff41d2bc6a7a59"
+        },
+        {
+          "path": "src/app/(public)/(patient)/medicine-requests/page.tsx",
+          "sha": "cbbb24159104166881d5026a0f27be692ae774e4"
+        },
+        {
+          "path": "src/app/(public)/(patient)/order/page.tsx",
+          "sha": "db59576d33cbfd8796f5958f1a3502636401a6b9"
+        },
+        {
+          "path": "src/app/(public)/(patient)/patient-dashboard/page.tsx",
+          "sha": "ab76a1855da12dc99d177c2d53cf9d01e5b353cb"
+        },
+        {
+          "path": "src/app/(public)/(patient)/prescriptions/page.tsx",
+          "sha": "99c9dffffaa731f2b9c3aa652143d0fd9eacb57b"
+        },
+        {
+          "path": "src/app/(public)/(patient)/profile/page.tsx",
+          "sha": "f2d6e51407348309fad28e14d8285c23fdd84edd"
+        },
+        {
+          "path": "src/app/(public)/(patient)/settings/page.tsx",
+          "sha": "80c1c768b542ab35e3f6e8cf70139ff1d31cf464"
+        },
+        {
+          "path": "src/app/(public)/(patient)/tracking/page.tsx",
+          "sha": "70c67027447e2c301e51c1897532d05b405bc93f"
+        },
+        {
+          "path": "src/app/(public)/layout.tsx",
+          "sha": "4f9a9fb4980ff0f96f2761389b91d13a4566a783"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/employees/page.tsx",
+          "sha": "8a4e869dc2109de34aef62f3d195e7d589ce703a"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/inventory/page.tsx",
+          "sha": "31d60993635207f5339bc26f28469df85a16dda6"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/layout.tsx",
+          "sha": "3b2abdb87a3ea5aef3ca44e7d3ae5c1c2753a1c4"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/orders/page.tsx",
+          "sha": "51027e0b6073534284acb25412149d788b77a5e7"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/page.tsx",
+          "sha": "4b186a10ddc97d74610e8fc3b90614dff60dc936"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/partners/page.tsx",
+          "sha": "71751e4218048fd8a7a81d6fd0f0af609ead46a1"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/patients/page.tsx",
+          "sha": "f589ca18b04a872734fd1bcd3caa434e9dfc16de"
+        },
+        {
+          "path": "src/app/Pharmacy-admin/settings/page.tsx",
+          "sha": "4b68edb40e225d452cbffebd7308cb0e08c61b1c"
+        },
+        {
+          "path": "src/app/admin/page.tsx",
+          "sha": "194b667b7041d27a3198b9205a0a4562aedc087b"
+        },
+        {
+          "path": "src/app/api/[...path]/route.ts",
+          "sha": "24a970d4ce6c70450fab189d3b1eca2476f43bb9"
+        },
+        {
+          "path": "src/app/auth/callback/page.tsx",
+          "sha": "8071f9a990444450036d57f3579b39219d837c76"
+        },
+        {
+          "path": "src/app/auth/forgot-password/page.tsx",
+          "sha": "99fc1c97b247ef8d0546f93feaf74ca3ca26dc76"
+        },
+        {
+          "path": "src/app/auth/login/layout.tsx",
+          "sha": "962dfeb2dfff34af89e5dec4c0092df675637156"
+        },
+        {
+          "path": "src/app/auth/login/page.tsx",
+          "sha": "cf05088d4612ec4249d80694fcd91f055a935b88"
+        },
+        {
+          "path": "src/app/auth/pharmacy-signup/page.tsx",
+          "sha": "756b5e80bfb43c353d5ebbd216915bf6e0e526e3"
+        },
+        {
+          "path": "src/app/auth/reset-password/page.tsx",
+          "sha": "c2346b2e99ee9dd3423c5673c9ae2c0738269b86"
+        },
+        {
+          "path": "src/app/auth/set-password/page.tsx",
+          "sha": "3827282f149810fb6133a1cfa09c468a9949c42a"
+        },
+        {
+          "path": "src/app/auth/signup/page.tsx",
+          "sha": "20308947edf5a61fb49f3aca8e8bdca175b72676"
+        },
+        {
+          "path": "src/app/globals.css",
+          "sha": "bc0c2e2ab5746f4f8c6908324d6e4efd6a19c440"
+        },
+        {
+          "path": "src/app/layout.tsx",
+          "sha": "94d5636cb840a289faaf1ab128aca0d567719d3f"
+        },
+        {
+          "path": "src/app/not-found.tsx",
+          "sha": "185a90e8eaefd4adca1ae3faec500532e66d90ca"
+        },
+        {
+          "path": "src/app/page.tsx",
+          "sha": "5bbe6bf684b2eedbd778161c0b4490340586d54a"
+        },
+        {
+          "path": "src/app/pharmacist.zip",
+          "sha": "4e8423dfbd6f09779dc9378a8bc16bc2d6c708db"
+        },
+        {
+          "path": "src/app/pharmacist/delivery/page.tsx",
+          "sha": "0230774d5c426275a3ecbcdec760cb1e2c6eea5b"
+        },
+        {
+          "path": "src/app/pharmacist/history/page.tsx",
+          "sha": "a0e63967eb7efebbeca50701b237229057ab3005"
+        },
+        {
+          "path": "src/app/pharmacist/inventory/page.tsx",
+          "sha": "5293682c2266bcb1d39f37d2048950b89f35a224"
+        },
+        {
+          "path": "src/app/pharmacist/layout.tsx",
+          "sha": "4107564a1fda1923bc0990fd37079f049f0ebd05"
+        },
+        {
+          "path": "src/app/pharmacist/orders/page.tsx",
+          "sha": "7f8371d54c018fe49a157666e96409347122686f"
+        },
+        {
+          "path": "src/app/pharmacist/page.tsx",
+          "sha": "eaf57e73649416bd9a9ba2b9f274e55393469dad"
+        },
+        {
+          "path": "src/app/pharmacist/prescriptions/page.tsx",
+          "sha": "573bb817f1f8973b81670f040b08b9ca3bb1677b"
+        },
+        {
+          "path": "src/app/super-admin/admins/[id]/page.tsx",
+          "sha": "13f4025fdf4a2a9cf6875fe973067acd91b143c4"
+        },
+        {
+          "path": "src/app/super-admin/admins/page.tsx",
+          "sha": "d57f6075648cc3a2611fed235604b8b819219f79"
+        },
+        {
+          "path": "src/app/super-admin/analytics/page.tsx",
+          "sha": "18e9e116bf75c3451cdeee87b358f9db3d07140b"
+        },
+        {
+          "path": "src/app/super-admin/audit-logs/page.tsx",
+          "sha": "76f7ab54152ce7b181e151e838007a781290516e"
+        },
+        {
+          "path": "src/app/super-admin/insurance-claims/page.tsx",
+          "sha": "92ccfdc8c57e59c63c20f5852f17e1161c717a1a"
+        },
+        {
+          "path": "src/app/super-admin/layout.tsx",
+          "sha": "40e90e2808077870453d8e5d0771e90f71a55468"
+        },
+        {
+          "path": "src/app/super-admin/orders/page.tsx",
+          "sha": "ff9c445f31448f731d6dde3e10a58217b27eeaa3"
+        },
+        {
+          "path": "src/app/super-admin/page.tsx",
+          "sha": "506272473adc95938158e5613660586c977e3c72"
+        },
+        {
+          "path": "src/app/super-admin/patients/page.tsx",
+          "sha": "6ee83f9768f1fd0ddb17dd81dcb87b5a74ec1bea"
+        },
+        {
+          "path": "src/app/super-admin/pharmacies/[id]/page.tsx",
+          "sha": "adcb022ad3772c65b7745522d69ff227d624240a"
+        },
+        {
+          "path": "src/app/super-admin/pharmacies/page.tsx",
+          "sha": "01265c4dd02c1cb85029787862065a796d10f828"
+        },
+        {
+          "path": "src/app/super-admin/settings/page.tsx",
+          "sha": "d0eca741343c9dd2d3fcbe8879b65ab2765e549e"
+        },
+        {
+          "path": "src/assets/hero.png",
+          "sha": "02251f4b956c55af2d76fd0788124d7eee2b45eb"
+        },
+        {
+          "path": "src/assets/logo.svg",
+          "sha": "c21694795a160d7a4f6223127c4e4a153cee00a7"
+        },
+        {
+          "path": "src/assets/react.svg",
+          "sha": "6c87de9bb3358469122cc991d5cf578927246184"
+        },
+        {
+          "path": "src/assets/vite.svg",
+          "sha": "5101b674df391399da71c767aa5c976426c9dc7a"
+        },
+        {
+          "path": "src/components/brand/MedDeliveryLogo.tsx",
+          "sha": "90bbc0fee62ca95e3916275e63977f0b648a3643"
+        },
+        {
+          "path": "src/components/layout/AdminLayout.tsx",
+          "sha": "448db7b5d41e62c430eea11db4a4d3120cc64626"
+        },
+        {
+          "path": "src/components/layout/Footer.tsx",
+          "sha": "33539a216e730a4b7f155bb762c15c9ce0269148"
+        },
+        {
+          "path": "src/components/layout/Header.tsx",
+          "sha": "7a45a21a9bdc18aaa389d022be5ebdaa44f89b6e"
+        },
+        {
+          "path": "src/components/layout/MainLayout.tsx",
+          "sha": "42582c9dadd8dd8887d075aaf15b264e89eecc97"
+        },
+        {
+          "path": "src/components/layout/PatientAppShell.tsx",
+          "sha": "a71c325b6120673ec733c11086f93acb3b56948f"
+        },
+        {
+          "path": "src/components/layout/PharmacistLayout.tsx",
+          "sha": "190ff6bf7dd8582aafc5a922d39d524e16539c91"
+        },
+        {
+          "path": "src/components/layout/PharmacyAdminLayout.tsx",
+          "sha": "a4538d83e9239c0ffeca1c7453c2e91c8728e077"
+        },
+        {
+          "path": "src/components/layout/SuperAdminLayout.tsx",
+          "sha": "be16ca0dee179f5f6e60493dd0886d4756ef555c"
+        },
+        {
+          "path": "src/components/pharmacy-admin/PersonnelManagement.tsx",
+          "sha": "30b1aa5b6853abf05540ae843f24c199ff4a9eac"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "sha": "09df753676cbb937c76c080deaea440a4345a28f"
+        },
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "sha": "014f5aa3b65627541b66ace8f6624e118a7c5afe"
+        },
+        {
+          "path": "src/components/ui/input.tsx",
+          "sha": "7d21babba91655ac1cd6a5ea630eb2ec18d2b52b"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "sha": "74da65c33b49c2921947376aa11634a403c833fd"
+        },
+        {
+          "path": "src/global.d.ts",
+          "sha": "35306c6fc9aed088a742e2337d44bbf877c6ae8e"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "sha": "bd0c391ddd1088e9067844c48835bf4abcd61783"
+        },
+        {
+          "path": "src/services/adminApi.ts",
+          "sha": "b5aaceb33baa5526d6ff65b94da17916ce3d3cf9"
+        },
+        {
+          "path": "src/services/api.ts",
+          "sha": "beb2a0ea697bc16b01a36aece7518989a9b7b4dd"
+        },
+        {
+          "path": "src/services/apiClient.ts",
+          "sha": "8380201c6b3f3a7d1b796dc8a033b5f04ac3feb8"
+        },
+        {
+          "path": "src/services/auth.ts",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+        },
+        {
+          "path": "src/services/authApi.ts",
+          "sha": "611ea24811002f644727523b6699c5799195411c"
+        },
+        {
+          "path": "src/services/patientApi.ts",
+          "sha": "05baa630b7b0d2b8d12b892459a718c848e41ca8"
+        },
+        {
+          "path": "src/services/pharmacistApi.ts",
+          "sha": "656ddcfde6f104f0b87ae58d6630007d7587b747"
+        },
+        {
+          "path": "src/services/pharmacyApi.ts",
+          "sha": "c17bb9d551d94fc5d95d17376292b60d4a0d40cd"
+        },
+        {
+          "path": "src/types/api.ts",
+          "sha": "5400757097b1398a16d945c980b0214298889795"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha": "a4523cf386cb9e762bb01d6eae22a7b551d1b155"
+        }
+      ],
+      "reviewedFiles": [
+        "package.json",
+        "src/services/patientApi.ts",
+        "src/app/(public)/(patient)/order/page.tsx"
+      ]
+    },
+    {
+      "repository": "Cynthy15/VideoPlatform",
+      "commit": "6c746b6fa491fc9e982c82749836a0083a0d3cb2",
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "9c522f4dc9a1816f2342bff4fa544990aaff2c32"
+        },
+        {
+          "path": "eslint.config.js",
+          "sha": "4fa125da29e01fa85529cfa06a83a7c0ce240d55"
+        },
+        {
+          "path": "index.html",
+          "sha": "99388397c31e8704de0047af557e9692556361c3"
+        },
+        {
+          "path": "package.json",
+          "sha": "cee27b4ee7c4a7360c4c389b14c0201441e13d7c"
+        },
+        {
+          "path": "public/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3"
+        },
+        {
+          "path": "public/icons.svg",
+          "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9"
+        },
+        {
+          "path": "src/App.css",
+          "sha": "f90339d8f765fa2c69d9a341959a8ddb9fff5720"
+        },
+        {
+          "path": "src/App.jsx",
+          "sha": "744654d41d717cf294b6e69d798c12a80f13d702"
+        },
+        {
+          "path": "src/components/ChannelCard.jsx",
+          "sha": "33b31af3dd1d3016b110fc7ffededce99c1720f6"
+        },
+        {
+          "path": "src/components/Loader.jsx",
+          "sha": "3e46099f4844dc038a47141f01ed9b3cc66407d8"
+        },
+        {
+          "path": "src/components/Navbar.jsx",
+          "sha": "33f06a16e525a59d8e323426329360dcfc4857c3"
+        },
+        {
+          "path": "src/components/SearchBar.jsx",
+          "sha": "e1d9f4a3926d89e841aaf04f3e204f08dd96d261"
+        },
+        {
+          "path": "src/components/Sidebar.jsx",
+          "sha": "94a19d3f5c2648fdc4b6e3556f89eb0ee5476426"
+        },
+        {
+          "path": "src/components/VideoCard.jsx",
+          "sha": "43ca9f00acf0bcb08d973b11fff7b892e0319c53"
+        },
+        {
+          "path": "src/index.css",
+          "sha": "f58a0702bbf5e8120ad045a684b83a000e7facd6"
+        },
+        {
+          "path": "src/main.jsx",
+          "sha": "e14d575c2fed8e0a8b8110f0d1a9a4408f3da5c5"
+        },
+        {
+          "path": "src/pages/ChannelDetails.jsx",
+          "sha": "3a159886a6730c8cc062ca23e13c002500f610dc"
+        },
+        {
+          "path": "src/pages/Feed.jsx",
+          "sha": "cc9b3689eb85fe91d243c0d48d550d0398e0cd3e"
+        },
+        {
+          "path": "src/pages/SearchFeed.jsx",
+          "sha": "d31a7fb778a1f2d44567a4cce99ba7a79be2cd32"
+        },
+        {
+          "path": "src/pages/VideoDetails.jsx",
+          "sha": "e6e55c3bccf33bd0f1f5cf9e991eddf8cbbf2115"
+        },
+        {
+          "path": "src/utils/constants.js",
+          "sha": "a491d47b3465c8beb853190b473a8dc43bd5e907"
+        },
+        {
+          "path": "src/utils/fetchFromAPI.js",
+          "sha": "68df5fb76744b43545c99ac260f6d0e6c4b16384"
+        },
+        {
+          "path": "vite.config.js",
+          "sha": "d1203cd039ee3b670c902dfd6cef6d67be459dc1"
+        }
+      ],
+      "reviewedFiles": [
+        "package.json",
+        "src/pages/VideoDetails.jsx",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "repository": "Cynthy15/REAL-TIME-BLOOD-SUPPLY-FLOW-MONITORING-SYSTEM",
+      "commit": "d7bb620975a2cc7a6f11609c47580f9034afbce2",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "a547bf36d8d11a4f89c59c144f24795749086dd1"
+        },
+        {
+          "path": "PROJECT_DOCUMENTATION.md",
+          "sha": "90b49eb209104e1a59fffcd72d98f95f185e9fef"
+        },
+        {
+          "path": "README.md",
+          "sha": "a36934d874c7fbc51aecd1c66dffc106f60693a9"
+        },
+        {
+          "path": "backend/README.md",
+          "sha": "55837a60cf62851d826d1cef6781cd5f99c71887"
+        },
+        {
+          "path": "backend/crud.py",
+          "sha": "5e9d4dc1560b33d9d50de7ff84fd61b278e9f89e"
+        },
+        {
+          "path": "backend/database.py",
+          "sha": "683227c5fde3e9e1272f6bdc2c0f993775ebfb17"
+        },
+        {
+          "path": "backend/inventory_model.py",
+          "sha": "7c492ea3e4ffd7e8e6fdc2fa3ce1929d929ccfc6"
+        },
+        {
+          "path": "backend/main.py",
+          "sha": "ec2117cbb14aa55a23a0cc9dd9d72e60773d1c41"
+        },
+        {
+          "path": "backend/models.py",
+          "sha": "919037f52f8cf8d69d8e71f0d7620ed68aaded37"
+        },
+        {
+          "path": "backend/requirements.txt",
+          "sha": "452cf620b11317b13ac07208770c8b8ea1d4f2fc"
+        },
+        {
+          "path": "backend/schemas.py",
+          "sha": "fcea6650e51ee453769326b797116a44a844ea26"
+        },
+        {
+          "path": "eslint.config.js",
+          "sha": "4fa125da29e01fa85529cfa06a83a7c0ce240d55"
+        },
+        {
+          "path": "index.html",
+          "sha": "a82d5f0a8293ed6b46218ef0642158c25e7c141b"
+        },
+        {
+          "path": "package.json",
+          "sha": "9bfa384be0f40cf138ffc3b0c25a07cbe145ce02"
+        },
+        {
+          "path": "public/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3"
+        },
+        {
+          "path": "public/icons.svg",
+          "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9"
+        },
+        {
+          "path": "src/App.css",
+          "sha": "d08a732ed0616b39bdb05b2123d88cc881e3af1a"
+        },
+        {
+          "path": "src/App.jsx",
+          "sha": "3c5da04b3882ffb7fecbe927247d71831a7cf323"
+        },
+        {
+          "path": "src/assets/hero.png",
+          "sha": "cc51a3d20ad4bc961b596a6adfd686685cd84bb0"
+        },
+        {
+          "path": "src/assets/react.svg",
+          "sha": "6c87de9bb3358469122cc991d5cf578927246184"
+        },
+        {
+          "path": "src/assets/vite.svg",
+          "sha": "5101b674df391399da71c767aa5c976426c9dc7a"
+        },
+        {
+          "path": "src/components/DashboardLayout.css",
+          "sha": "efb56e0cb2177e8f236fc49b90b87b8b267b3641"
+        },
+        {
+          "path": "src/components/DashboardLayout.jsx",
+          "sha": "7a853529dd949162401cc6cc81f4f655759fc3e8"
+        },
+        {
+          "path": "src/components/Modal.css",
+          "sha": "c2211ff4d2b8e9d6549ac4c981e6259b01ebe558"
+        },
+        {
+          "path": "src/components/Modal.jsx",
+          "sha": "c123d60bc12496b1528857efebe395a83453ad30"
+        },
+        {
+          "path": "src/components/Sidebar.css",
+          "sha": "3919f7dfc7db9e99aa0a4afb9943d8759e170cb3"
+        },
+        {
+          "path": "src/components/Sidebar.jsx",
+          "sha": "f8c456f62af42f1ec3b1fd7170b3cd22eed5eaef"
+        },
+        {
+          "path": "src/components/StatCard.css",
+          "sha": "59877d0befad825b1f3a43ee79aeb9cdf2b764f0"
+        },
+        {
+          "path": "src/components/StatCard.jsx",
+          "sha": "b98bbdf4a9fe2f7c4bb8412088c9f03c8bbb3270"
+        },
+        {
+          "path": "src/components/ThreeHero.jsx",
+          "sha": "123796f6a81bd32076c8f0b5227bb4824e550d6d"
+        },
+        {
+          "path": "src/context/AuthContext.jsx",
+          "sha": "b9e89249b3348f9b47ad646379e3536dad1e9e21"
+        },
+        {
+          "path": "src/data/mockData.js",
+          "sha": "70ad8fb754dc98b5bda6919005a721985f4a11e2"
+        },
+        {
+          "path": "src/index.css",
+          "sha": "dfcf173e1b4ff8bad52a032200cfde90dc3d66e9"
+        },
+        {
+          "path": "src/main.jsx",
+          "sha": "b9a1a6deac8775b5598874b2bc3c7971d82cf211"
+        },
+        {
+          "path": "src/pages/Landing.jsx",
+          "sha": "2efd31a15eb9f457a93c77ac5005f19ff6c65b24"
+        },
+        {
+          "path": "src/pages/Login.css",
+          "sha": "6d95a4d5136db1964d9d2f3018fa2bbf73c3a6f9"
+        },
+        {
+          "path": "src/pages/Login.jsx",
+          "sha": "396f65a2e2bd5999ea9d2af5c49f20a7533717c4"
+        },
+        {
+          "path": "src/pages/RegisterHospital.jsx",
+          "sha": "6d0ab4c3e49d1a1b23e311e1be3fce50d709bda7"
+        },
+        {
+          "path": "src/pages/Settings.jsx",
+          "sha": "15eaf0e53dda89247281f41ea5ef1d403383a4b5"
+        },
+        {
+          "path": "src/pages/hospital/HospitalDashboard.jsx",
+          "sha": "411588d9effc2220d1f4861a270511e661f98a27"
+        },
+        {
+          "path": "src/pages/hospital/HospitalInventory.jsx",
+          "sha": "0042eff6a76ca2687ebc1878efe129c09aeb9513"
+        },
+        {
+          "path": "src/pages/hospital/HospitalRequests.jsx",
+          "sha": "40049bb3932e7cf48b20c470a1402e0c4ffed536"
+        },
+        {
+          "path": "src/pages/rbc/Analytics.jsx",
+          "sha": "ae9b60a61c5f4a44e22649c422831a68ff4d51c2"
+        },
+        {
+          "path": "src/pages/rbc/Donors.jsx",
+          "sha": "3d6c6e273f545b1582074e58b006d6b73e7a9662"
+        },
+        {
+          "path": "src/pages/rbc/Inventory.css",
+          "sha": "e8f15c90ae1a38f7377539898700d4ef294b8c88"
+        },
+        {
+          "path": "src/pages/rbc/Inventory.jsx",
+          "sha": "4a16ade4d14b6f6f5445394596556a26bb3047c1"
+        },
+        {
+          "path": "src/pages/rbc/RBCDashboard.css",
+          "sha": "549ed53ff82ee175b60bf6684e002544b4c497ae"
+        },
+        {
+          "path": "src/pages/rbc/RBCDashboard.jsx",
+          "sha": "10039d4faa009e689805e196bd4b7c56a2f50144"
+        },
+        {
+          "path": "src/pages/rbc/Requests.jsx",
+          "sha": "8017acb92f75413523a147e2abc79fef4664df9b"
+        },
+        {
+          "path": "src/pages/rbc/Transfers.jsx",
+          "sha": "7bd4a587b2aa5c75ce1e439c4a934ad5f57c1d0e"
+        },
+        {
+          "path": "src/pages/super/SuperDashboard.jsx",
+          "sha": "e54530a80161dd1c27e5f12cad5d1c269c878a95"
+        },
+        {
+          "path": "src/pages/super/UserApprovals.jsx",
+          "sha": "d60bc1f9209cec1204ba87f1d0a00f6ddee76a89"
+        },
+        {
+          "path": "src/pages/viewer/PatientDashboard.jsx",
+          "sha": "eb342f0a811effadbebacbf800184147e736a8d1"
+        },
+        {
+          "path": "vite.config.js",
+          "sha": "8b0f57b91aeb45c54467e29f983a0893dc83c4d9"
+        }
+      ],
+      "reviewedFiles": [
+        "backend/main.py",
+        "backend/inventory_model.py",
+        "backend/models.py"
+      ]
+    },
+    {
+      "repository": "Cynthy15/SmartStay-Booking-Platform",
+      "commit": "54ba41cff509b2aff360670bb904168fb7f22df4",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "7ceb59f89a14551ad717dd1c9b2492359ba58ef2"
+        },
+        {
+          "path": "README.md",
+          "sha": "66415d8a2805d8822caa8c43b2c447fcb4ac77f2"
+        },
+        {
+          "path": "eslint.config.js",
+          "sha": "4fa125da29e01fa85529cfa06a83a7c0ce240d55"
+        },
+        {
+          "path": "index.html",
+          "sha": "f70bf20d5a73893f257c057adca143cb1239c760"
+        },
+        {
+          "path": "package.json",
+          "sha": "70d25ef5710e7132c3008c03f1371ddbf682cb5a"
+        },
+        {
+          "path": "public/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3"
+        },
+        {
+          "path": "public/icons.svg",
+          "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9"
+        },
+        {
+          "path": "src/App.css",
+          "sha": "f90339d8f765fa2c69d9a341959a8ddb9fff5720"
+        },
+        {
+          "path": "src/App.jsx",
+          "sha": "0e3ced690fc9aefe18642c93790e922602f7d732"
+        },
+        {
+          "path": "src/components/bookings/BookingModal.css",
+          "sha": "81b59e78f9e859970c3ce7fb820993a2e696f136"
+        },
+        {
+          "path": "src/components/bookings/BookingModal.jsx",
+          "sha": "94d9f97009e6a84d3e268ad308de8ed121999f31"
+        },
+        {
+          "path": "src/components/layout/FilterSidebar.css",
+          "sha": "30e1f866320f735503e9ffbb8e56e5175c1584b4"
+        },
+        {
+          "path": "src/components/layout/FilterSidebar.jsx",
+          "sha": "ac905e393b871ad17d57bc4fb70d3a7ee6f080a8"
+        },
+        {
+          "path": "src/components/layout/Navbar.css",
+          "sha": "434e9e42d41155238c912858c87b72424c60da9d"
+        },
+        {
+          "path": "src/components/layout/Navbar.jsx",
+          "sha": "b932e3264e9f6276a174b399ca8cfb2b67e04360"
+        },
+        {
+          "path": "src/components/layout/ProtectedRoute.jsx",
+          "sha": "52842ad3c5c0914e1939d6735ae82e654bdd19a8"
+        },
+        {
+          "path": "src/components/listings/ListingCard.css",
+          "sha": "64ecb577fc99a999dd923100223d7838f7c6822c"
+        },
+        {
+          "path": "src/components/listings/ListingCard.jsx",
+          "sha": "c930c41121663ec3228741195e29f92739374fa3"
+        },
+        {
+          "path": "src/components/ui/ErrorState.css",
+          "sha": "c826d3887e5938d742169c6cd55f3b2373b8b5bf"
+        },
+        {
+          "path": "src/components/ui/ErrorState.jsx",
+          "sha": "038a743ccf716d0ae4e21b54458b090d2d437325"
+        },
+        {
+          "path": "src/components/ui/Loader.css",
+          "sha": "946290e4dfb5a48e93665b97104c92895709b553"
+        },
+        {
+          "path": "src/components/ui/Loader.jsx",
+          "sha": "ab6068208f1783b7ad5935bd5c7c00f6c7322c51"
+        },
+        {
+          "path": "src/context/FavoritesContext.jsx",
+          "sha": "6aeeb157a5b12cf0d0f7be1a534577f0d7daf22e"
+        },
+        {
+          "path": "src/context/FiltersContext.jsx",
+          "sha": "d47cbb3a8652d549e239239ff6c5b69b86277e01"
+        },
+        {
+          "path": "src/hooks/useListings.js",
+          "sha": "1953b17616ea7a3aaa760b473c299f705c2946c8"
+        },
+        {
+          "path": "src/index.css",
+          "sha": "97839ed988e990fadb401c69011dff9c0bd109a1"
+        },
+        {
+          "path": "src/main.jsx",
+          "sha": "45a421592aad24ce6de779689d7d9e1613894fb8"
+        },
+        {
+          "path": "src/pages/Bookings.css",
+          "sha": "cd45379ffdf5ab5e9185398ddb8f6239fe65bc6e"
+        },
+        {
+          "path": "src/pages/Bookings.jsx",
+          "sha": "769c096109ff810d9bd8a9266980f841bce4ad42"
+        },
+        {
+          "path": "src/pages/Favorites.css",
+          "sha": "c252c6b5fc4b60454d4dd526d8826c8b105a5961"
+        },
+        {
+          "path": "src/pages/Favorites.jsx",
+          "sha": "1428b89142e0522a7c528b3cbb4acf344b6a8def"
+        },
+        {
+          "path": "src/pages/Home.css",
+          "sha": "b8368f958eabc6bdc8ce2e219ee10ee161036057"
+        },
+        {
+          "path": "src/pages/Home.jsx",
+          "sha": "43298e574348683ef0077c5cfa3f2cccabd04a64"
+        },
+        {
+          "path": "src/pages/ListingDetails.css",
+          "sha": "faa126849bbf822908de8df06a22628b672171f0"
+        },
+        {
+          "path": "src/pages/ListingDetails.jsx",
+          "sha": "d56bb385a8ade9ff42cb004929127ee243827267"
+        },
+        {
+          "path": "src/pages/Login.css",
+          "sha": "bf7c29b9553264b90b221a323d2238f175acfd69"
+        },
+        {
+          "path": "src/pages/Login.jsx",
+          "sha": "f1288eee816e6d278843c648daa6a1d2c8f35088"
+        },
+        {
+          "path": "src/services/api.js",
+          "sha": "006efee7bc168b40fa3455a733a54932e399364c"
+        },
+        {
+          "path": "src/store/authStore.js",
+          "sha": "351e8cbd4b91e8b9321f6d6bc6487664059efe7f"
+        },
+        {
+          "path": "src/store/bookingsStore.js",
+          "sha": "748513b41dac219fecf2a19bfe7e965a01297bfe"
+        },
+        {
+          "path": "test-api.cjs",
+          "sha": "a37067d67ce1ecb557f950564dc8866a98affa2a"
+        },
+        {
+          "path": "test3.cjs",
+          "sha": "ac5e63193a279a7f212945cb819961bc71648da9"
+        },
+        {
+          "path": "vite.config.js",
+          "sha": "9ffcc675746194c4a34eb43404d15db40b810265"
+        }
+      ],
+      "reviewedFiles": [
+        "README.md",
+        "src/hooks/useListings.js",
+        "src/services/api.js"
+      ]
+    },
+    {
+      "repository": "Cynthy15/Phase-One-Capstone-Project",
+      "commit": "3731bec942aa463b372f56b4e21bb49220994c77",
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "9be08c15afb1a519808aff9bb3078cf3071ef9fe"
+        },
+        {
+          "path": "browse.html",
+          "sha": "b8f36d368fc32a660a2ed80cfef478f82711be83"
+        },
+        {
+          "path": "categories.html",
+          "sha": "912759315981229d6b6cbee025a141f5a0a475cb"
+        },
+        {
+          "path": "fav.html",
+          "sha": "068ccc14a72d7af6a6a2c7e632e3e410d25c9d3a"
+        },
+        {
+          "path": "index.html",
+          "sha": "974dd4c0c5099fa68c76c12b4a172f4793ba37ce"
+        },
+        {
+          "path": "logo.png",
+          "sha": "2544c3ed3f6e93d871780394121e6b4f471ffc74"
+        },
+        {
+          "path": "scripts/browse.js",
+          "sha": "690e83e60c3f1170860923018cfe254e0416ac73"
+        },
+        {
+          "path": "scripts/categories.js",
+          "sha": "078e8ef952b7934f0181f7ff337c91b8cd0df79b"
+        },
+        {
+          "path": "scripts/fav.js",
+          "sha": "f5e5d30fe53538f4a7b7318a40152911a0f8efec"
+        },
+        {
+          "path": "scripts/favoritesPage.js",
+          "sha": "c3a1c7c4cf426469d8f72e81bc788871129f4f8e"
+        },
+        {
+          "path": "scripts/fetchBooks.js",
+          "sha": "dfa2d10b8ab81dfc12cc5e3979a4500bcb82f80b"
+        },
+        {
+          "path": "scripts/index.js",
+          "sha": "eb10d139e17662974db4a2e971788cc3523951f1"
+        }
+      ],
+      "reviewedFiles": [
+        "README.md",
+        "scripts/browse.js",
+        "scripts/fav.js"
+      ]
+    }
+  ]
+}
